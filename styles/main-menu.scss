@@ -1,0 +1,29 @@
+.main-menu {
+    display: flex;   
+    flex-direction: column; 
+    flex-wrap: nowrap;                     
+    &__item {
+        display: flex;        
+        flex-wrap: nowrap; 
+        align-self: stretch;
+        align-content: flex-end;
+        &:not(:last-child) {
+            border-bottom: 1px solid $main-menu-border-color;          
+        }  
+        &:not(:first-child) {
+            border-top: 1px solid $main-menu-borderup-color;
+        }                              
+    }    
+    &__link {        
+        background: $menu-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $menu-text-color;
+        font-weight: bold;
+        font-size: 18px; 
+        width: 100%;  
+        text-align: center;
+        padding: 20px 0px;
+        white-space: nowrap;                         
+    }   
+}
