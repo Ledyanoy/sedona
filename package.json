@@ -1,5 +1,5 @@
 {
-  "name": "st-clinic",
+  "name": "sedona",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ledyanoy/st-clinic.git"
+    "url": "git+https://github.com/Ledyanoy/sedona.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ledyanoy/st-clinic/issues"
+    "url": "https://github.com/Ledyanoy/sedona/issues"
   },
-  "homepage": "https://github.com/Ledyanoy/st-clinic#readme",
+  "homepage": "https://github.com/Ledyanoy/sedona#readme",
   "dependencies": {
     "node-sass": "^4.6.1"
   }

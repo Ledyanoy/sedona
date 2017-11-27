@@ -1,0 +1,7 @@
+.text-card {    
+    padding-top: 40px; 
+    padding-bottom: 42px;     
+    &--blue {
+        background-color: $menu-color;
+    }
+}

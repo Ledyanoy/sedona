@@ -1,0 +1,33 @@
+.section {
+    &__text {               
+        width: 80%; 
+        text-align: center;
+        margin: 0 auto; 
+        &--caption {
+            color: $black-color;        
+            font-size: 18px;
+            font-weight: bold; 
+            margin-bottom: 25px; 
+            line-height: 1.5em;          
+        }
+        &--caption-white {
+            color: $menu-text-color;        
+            font-size: 18px;
+            font-weight: bold;                                          
+        } 
+        &--topic {
+            color: $topic-color;        
+            font-size: 14px;
+            line-height: 1.9em;                      
+        }
+        &--topic-white {
+            color: $menu-text-color;        
+            font-size: 14px;
+            line-height: 1.5em;                     
+        }        
+    }
+    &__number {
+        display: block;
+        margin: 15px 0px;               
+    }
+}

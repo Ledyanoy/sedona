@@ -1,0 +1,13 @@
+.intro {
+    &__image {        
+        display: block;  
+        margin-top: 55px;
+        padding-top: 90px;
+        padding-bottom: 85px;
+        background-image: url(pictures/back-mobile.jpg);                               
+    }
+    &__text {
+        display: block;  
+        margin: 0 auto;
+    }
+}
