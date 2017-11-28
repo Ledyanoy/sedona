@@ -113,7 +113,8 @@ table {
   margin-top: 55px;
   padding-top: 90px;
   padding-bottom: 85px;
-  background-image: url(pictures/back-mobile.jpg); }
+  background-image: url(pictures/back-mobile.jpg);
+  background-size: cover; }
 
 .intro__text {
   display: block;
@@ -257,3 +258,37 @@ table {
   color: #ffffff;
   font-size: 21px;
   font-weight: bold; }
+
+.footer-page {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+  .footer-page__tag {
+    text-align: center;
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 35px; }
+  .footer-page__socials {
+    margin: 0 auto;
+    width: 155px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between; }
+  .footer-page__icons {
+    background-color: #81b3d2;
+    padding: 17px 14px; }
+    .footer-page__icons--facebook {
+      background-color: #81b3d2;
+      padding: 13px 19px 17px 19px; }
+  .footer-page__pic {
+    margin-top: 17px; }
+    .footer-page__pic--facebook {
+      margin-top: 13px; }
+  .footer-page__copyrights {
+    width: 135px;
+    margin: 0 auto; }
+  .footer-page__copyrights-name {
+    display: inline-block; }
+  .footer-page__copyrights-logo {
+    display: inline-block;
+    vertical-align: middle; }
