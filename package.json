@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "node-sass styles/styles.scss style.css",
-    "scss": "node-sass styles/styles.scss styles.css -w -r styles"
+    "scss": "node-sass styles/styles.scss styles.css -w -r styles",
+    "server": "browser-sync start --server --files styles.css",
+    "dev": "concurrently --kill-others \"npm run scss\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
     "url": "https://github.com/Ledyanoy/sedona/issues"
   },
   "homepage": "https://github.com/Ledyanoy/sedona#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.1",
     "node-sass": "^4.6.1"
   }
 }
