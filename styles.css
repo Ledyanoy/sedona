@@ -171,7 +171,7 @@ table {
     height: 37px;
     top: -10px;
     left: -50px;
-    background-image: url(pictures/icon-house.png); }
+    background-image: url(pictures/icon-house.svg); }
   .cards__caption--gift:before {
     content: "";
     position: absolute;
@@ -179,7 +179,7 @@ table {
     height: 38px;
     top: -15px;
     left: -45px;
-    background-image: url(pictures/icon-gift.png); }
+    background: url(pictures/icon-gift.svg); }
   .cards__caption--food:before {
     content: "";
     position: absolute;
@@ -187,7 +187,7 @@ table {
     height: 35px;
     top: -5px;
     left: -50px;
-    background-image: url(pictures/icon-burger.png); }
+    background-image: url(pictures/icon-burger.svg); }
 
 .cards__topic {
   color: #333333;
@@ -285,7 +285,7 @@ table {
     .footer-page__pic--facebook {
       margin-top: 13px; }
   .footer-page__copyrights {
-    width: 135px;
+    width: 150px;
     margin: 0 auto; }
   .footer-page__copyrights-name {
     display: inline-block; }

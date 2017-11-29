@@ -12,7 +12,7 @@
             height: 37px;
             top: -10px; 
             left: -50px;
-            background-image: url(pictures/icon-house.png);                                
+            background-image: url(pictures/icon-house.svg);                                
         } 
         &--gift:before {
             content: "";
@@ -21,7 +21,7 @@
             height: 38px;
             top: -15px; 
             left: -45px;
-            background-image: url(pictures/icon-gift.png);                                
+            background: url(pictures/icon-gift.svg);                                
         }         
         &--food:before {
             content: "";
@@ -30,7 +30,7 @@
             height: 35px;
             top: -5px; 
             left: -50px;
-            background-image: url(pictures/icon-burger.png);                                
+            background-image: url(pictures/icon-burger.svg);                                
         } 
     }
     &__topic {
