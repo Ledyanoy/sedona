@@ -12,42 +12,7 @@
         }
         &:last-child {
             box-shadow: inset 0px -2px 5px 0px $main-menu-bordershadow-color;
-            position: relative;
-            &:after {
-                content: "";
-                position: absolute;
-                top: 70px; 
-                right: 20px;              
-                width: 25px;
-                height: 4px;
-                background-color: $menu-color;
-                box-shadow: 0 8px 0 0 $menu-color,
-                            0 16px 0 0 $menu-color; 
-            }  
-        }  
-        &:first-child {                
-            position: relative;
-            &:after {
-                content: "";
-                position: absolute;
-                top: 25px; 
-                right: 20px;              
-                width: 27px;
-                height: 4px;
-                background-color: $menu-text-color;
-                transform: rotate(45deg);                      
-            }  
-            &:before {
-                content: "";
-                position: absolute;
-                top: 25px; 
-                right: 20px;              
-                width: 27px;
-                height: 4px;
-                background-color: $menu-text-color;
-                transform: rotate(-45deg);                      
-            }  
-        }
+        }           
     }          
     &__link {         
         text-transform: uppercase;
@@ -58,6 +23,9 @@
         width: 100%;  
         text-align: center;
         padding: 18px 0px;
-        white-space: nowrap;                             
+        white-space: nowrap; 
+        &:hover {            
+            filter: blur(1px);           
+        }                            
     }     
 }

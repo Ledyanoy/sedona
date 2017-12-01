@@ -21,7 +21,13 @@
         &--facebook {
             background-color: $menu-color; 
             padding: 13px 19px 17px 19px;
-        }                     
+            &:hover {            
+                filter: blur(1px);  
+            }
+        } 
+        &:hover {            
+            filter: blur(1px);  
+        }                    
       }
     &__pic {
         margin-top: 17px;
