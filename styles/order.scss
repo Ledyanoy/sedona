@@ -12,9 +12,13 @@
         color: $menu-text-color;
         font-size: 21px;
         font-weight: bold;
-        cursor: pointer; 
+        cursor: pointer;        
         &:hover {            
             filter: blur(1px);  
+        } 
+        &:active {            
+            background-color: $menu-text-color;
+            color: $menu-color;
         }               
     }
 }

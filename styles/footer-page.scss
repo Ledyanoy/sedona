@@ -27,7 +27,10 @@
         } 
         &:hover {            
             filter: blur(1px);  
-        }                    
+        } 
+        &:active {            
+            opacity: 0.5;  
+        }                   
       }
     &__pic {
         margin-top: 17px;

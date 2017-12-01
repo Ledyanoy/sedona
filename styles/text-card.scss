@@ -4,4 +4,30 @@
     &--blue {
         background-color: $menu-color;
     }
+    &--bottom-angle {
+        position: relative;        
+        &:before {
+            content: '';
+            width: 50%;
+            height: 7%;
+            position: absolute;
+            background: $menu-color;
+            z-index: 1;
+            bottom: 0;  
+            transform-origin: left bottom;
+            transform: skewY(6deg);                       
+          } 
+          &:after {
+            content: '';
+            width: 50%;
+            height: 7%;
+            position: absolute;
+            background: $menu-color;
+            z-index: 1;
+            bottom: 0; 
+            right: 0; 
+            transform-origin: right bottom;
+            transform: skewY(-6deg);                       
+          }                      
+    }
 }

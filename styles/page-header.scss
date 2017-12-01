@@ -9,6 +9,9 @@
         border: none; 
         &:hover {            
             filter: blur(1px);  
+        } 
+        &:active {            
+            opacity: 0.5;  
         }          
         &--close{
             top: 0px; 
@@ -67,13 +70,15 @@
         background: transparent;
         border: none; 
         cursor: pointer;
-        z-index: 1;             
+        z-index: 1;  
+        outline: none;           
     }   
     &__logo {                
         position: absolute;
         top: 100%;
         left: 50%;
         margin-right: -50%;
-        transform: translateX(-50%)                                  
+        transform: translateX(-50%); 
+        z-index: 1;                                
     }    
 }

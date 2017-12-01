@@ -1,11 +1,35 @@
 .intro {
-    &__image {        
-        display: block;  
+    &__image { 
+        position: relative;       
+        display: block;         
         margin-top: 55px;
         padding-top: 90px;
         padding-bottom: 85px;
         background-image: url(pictures/back-mobile.jpg);
-        background-size: cover;                               
+        background-size: cover; 
+        &:before {
+            content: '';
+            width: 50%;
+            height: 7%;
+            position: absolute;
+            background: $menu-text-color;
+            z-index: 1;
+            bottom: 0;  
+            transform-origin: left bottom;
+            transform: skewY(9deg);                       
+          } 
+          &:after {
+            content: '';
+            width: 50%;
+            height: 7%;
+            position: absolute;
+            background: $menu-text-color;
+            z-index: 1;
+            bottom: 0; 
+            right: 0; 
+            transform-origin: right bottom;
+            transform: skewY(-9deg);                       
+          }                              
     }
     &__text {
         display: block;  

@@ -57,6 +57,8 @@ table {
     border: none; }
     .page-header__toggle:hover {
       filter: blur(1px); }
+    .page-header__toggle:active {
+      opacity: 0.5; }
     .page-header__toggle--close {
       top: 0px;
       right: 0px; }
@@ -107,13 +109,15 @@ table {
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 1; }
+    z-index: 1;
+    outline: none; }
   .page-header__logo {
     position: absolute;
     top: 100%;
     left: 50%;
     margin-right: -50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    z-index: 1; }
 
 .main-menu {
   display: flex;
@@ -139,14 +143,39 @@ table {
     white-space: nowrap; }
     .main-menu__link:hover {
       filter: blur(1px); }
+    .main-menu__link:active {
+      background: #ffffff;
+      color: #81b3d2; }
 
 .intro__image {
+  position: relative;
   display: block;
   margin-top: 55px;
   padding-top: 90px;
   padding-bottom: 85px;
   background-image: url(pictures/back-mobile.jpg);
   background-size: cover; }
+  .intro__image:before {
+    content: '';
+    width: 50%;
+    height: 7%;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(9deg); }
+  .intro__image:after {
+    content: '';
+    width: 50%;
+    height: 7%;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    transform-origin: right bottom;
+    transform: skewY(-9deg); }
 
 .intro__text {
   display: block;
@@ -184,6 +213,29 @@ table {
   padding-bottom: 42px; }
   .text-card--blue {
     background-color: #81b3d2; }
+  .text-card--bottom-angle {
+    position: relative; }
+    .text-card--bottom-angle:before {
+      content: '';
+      width: 50%;
+      height: 7%;
+      position: absolute;
+      background: #81b3d2;
+      z-index: 1;
+      bottom: 0;
+      transform-origin: left bottom;
+      transform: skewY(6deg); }
+    .text-card--bottom-angle:after {
+      content: '';
+      width: 50%;
+      height: 7%;
+      position: absolute;
+      background: #81b3d2;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      transform-origin: right bottom;
+      transform: skewY(-6deg); }
 
 .description__cards {
   width: 70%;
@@ -293,6 +345,9 @@ table {
   cursor: pointer; }
   .order__button:hover {
     filter: blur(1px); }
+  .order__button:active {
+    background-color: #ffffff;
+    color: #81b3d2; }
 
 .footer-page {
   padding-top: 40px;
@@ -319,6 +374,8 @@ table {
         filter: blur(1px); }
     .footer-page__icons:hover {
       filter: blur(1px); }
+    .footer-page__icons:active {
+      opacity: 0.5; }
   .footer-page__pic {
     margin-top: 17px; }
     .footer-page__pic--facebook {
