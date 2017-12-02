@@ -44,7 +44,7 @@ table {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
   .page__inner {
-    max-width: 320px; }
+    min-width: 250px; }
 
 .page-header {
   position: relative; }
@@ -192,6 +192,8 @@ table {
     margin-bottom: 25px;
     line-height: 1.5em; }
   .section__text--caption-white {
+    position: relative;
+    z-index: 2;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold; }
@@ -214,7 +216,8 @@ table {
   .text-card--blue {
     background-color: #81b3d2; }
   .text-card--bottom-angle {
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     .text-card--bottom-angle:before {
       content: '';
       width: 50%;

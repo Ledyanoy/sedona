@@ -11,6 +11,8 @@
             line-height: 1.5em;          
         }
         &--caption-white {
+            position: relative;
+            z-index: 2;
             color: $menu-text-color;        
             font-size: 18px;
             font-weight: bold;                                          

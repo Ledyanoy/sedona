@@ -5,7 +5,8 @@
         background-color: $menu-color;
     }
     &--bottom-angle {
-        position: relative;        
+        position: relative;
+        z-index: 2;        
         &:before {
             content: '';
             width: 50%;
