@@ -44,7 +44,7 @@ table {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
   .page__inner {
-    min-width: 250px; }
+    min-width: 290px; }
 
 .page-header {
   position: relative; }
@@ -109,8 +109,7 @@ table {
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 1;
-    outline: none; }
+    z-index: 1; }
   .page-header__logo {
     position: absolute;
     top: 100%;
@@ -152,13 +151,15 @@ table {
   display: block;
   margin-top: 55px;
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 125px;
+  margin-bottom: -40px;
   background-image: url(pictures/back-mobile.jpg);
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   .intro__image:before {
     content: '';
     width: 50%;
-    height: 7%;
+    height: 4em;
     position: absolute;
     background: #ffffff;
     z-index: 1;
@@ -168,7 +169,7 @@ table {
   .intro__image:after {
     content: '';
     width: 50%;
-    height: 7%;
+    height: 4em;
     position: absolute;
     background: #ffffff;
     z-index: 1;
@@ -193,10 +194,15 @@ table {
     line-height: 1.5em; }
   .section__text--caption-white {
     position: relative;
-    z-index: 2;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold; }
+  .section__text--caption-white-angle {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -30px; }
   .section__text--topic {
     color: #333333;
     font-size: 14px;
@@ -217,11 +223,13 @@ table {
     background-color: #81b3d2; }
   .text-card--bottom-angle {
     position: relative;
-    z-index: 2; }
+    overflow: hidden;
+    z-index: 2;
+    padding-bottom: 73px; }
     .text-card--bottom-angle:before {
       content: '';
       width: 50%;
-      height: 7%;
+      height: 3em;
       position: absolute;
       background: #81b3d2;
       z-index: 1;
@@ -231,7 +239,7 @@ table {
     .text-card--bottom-angle:after {
       content: '';
       width: 50%;
-      height: 7%;
+      height: 3em;
       position: absolute;
       background: #81b3d2;
       z-index: 1;
