@@ -483,6 +483,8 @@ table {
       width: 33.3%;
       padding-top: 45px;
       padding-bottom: 45px; }
+      .sight__card:not(:last-child) {
+        border-bottom: none; }
     .sight__caption {
       font-size: 21px;
       width: 60%;

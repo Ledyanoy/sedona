@@ -45,7 +45,10 @@
         &__card {
             width: 33.3%;            
             padding-top: 45px;
-            padding-bottom: 45px;                                
+            padding-bottom: 45px; 
+            &:not(:last-child) {             
+                border-bottom: none; 
+            }                               
         } 
         &__caption {                   
             font-size: 21px;
