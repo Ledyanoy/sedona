@@ -3,7 +3,27 @@
         width: 70%;
         margin-left: 22%;
         padding: 35px 0px;
-
     }
 }
-    
+
+@media (min-width: 768px) {
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+        &__image {                     
+            width: 67%;
+            height: 257px;
+            overflow: hidden;
+            &--bridge {                
+                order: -1;
+            }
+        }  
+        &__cards {
+            width: 100%;
+            margin-left: 0px;
+            padding-top: 160px;
+            padding-bottom: 32px;
+            display: flex;
+        }      
+    }
+}

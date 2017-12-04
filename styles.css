@@ -118,6 +118,12 @@ table {
     transform: translateX(-50%);
     z-index: 1; }
 
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none; }
+  .page-header__logo {
+    top: 0; } }
+
 .main-menu {
   display: flex;
   flex-direction: column; }
@@ -146,15 +152,42 @@ table {
       background: #ffffff;
       color: #81b3d2; }
 
+@media (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    justify-content: space-between; }
+    .main-menu__item {
+      background: none;
+      width: 20%; }
+      .main-menu__item:not(:last-child) {
+        border-bottom: none; }
+      .main-menu__item:not(:first-child) {
+        border-top: none; }
+      .main-menu__item:last-child {
+        box-shadow: none; }
+      .main-menu__item:nth-child(2) {
+        margin-right: 20%; }
+    .main-menu__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0px;
+      white-space: nowrap; } }
+
 .intro__image {
   position: relative;
   display: block;
   margin-top: 55px;
   padding-top: 90px;
-  padding-bottom: 125px;
+  padding-bottom: 135px;
   margin-bottom: -40px;
   background-image: url(pictures/back-mobile.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden; }
   .intro__image:before {
     content: '';
@@ -181,6 +214,22 @@ table {
 .intro__text {
   display: block;
   margin: 0 auto; }
+  .intro__text--tablet {
+    margin-top: -10px; }
+
+@media (min-width: 768px) {
+  .intro__image {
+    margin-top: 0px;
+    padding-bottom: 220px;
+    background-image: url(pictures/back-desktop.jpg);
+    background-size: 101%;
+    padding-bottom: 140px; }
+    .intro__image:before {
+      height: 6.6em;
+      left: 4.4%; }
+    .intro__image:after {
+      height: 6.6em;
+      right: 4.4%; } }
 
 .section__text {
   width: 80%;
@@ -216,6 +265,26 @@ table {
   display: block;
   margin: 15px 0px; }
 
+@media (min-width: 768px) {
+  .section__text--caption {
+    font-size: 21px;
+    line-height: 1.2em;
+    margin-bottom: 30px; }
+  .section__text--caption-white {
+    font-size: 21px;
+    margin-top: 5px;
+    line-height: 1.2em;
+    width: 59.6%; }
+  .section__text--caption-white-angle {
+    font-size: 21px;
+    margin-top: 5px;
+    line-height: 1.2em; }
+  .section__text--topic-white {
+    width: 65%; }
+  .section__number {
+    margin-top: 12px;
+    margin-bottom: 20px; } }
+
 .text-card {
   padding-top: 40px;
   padding-bottom: 42px; }
@@ -248,10 +317,49 @@ table {
       transform-origin: right bottom;
       transform: skewY(-6deg); }
 
+@media (min-width: 768px) {
+  .text-card--blue {
+    width: 33%;
+    height: 175px; }
+  .text-card--bottom-angle {
+    overflow: visible;
+    padding-bottom: 50px; }
+    .text-card--bottom-angle:before {
+      bottom: 75%;
+      transform-origin: left bottom;
+      transform: skewY(5deg);
+      width: 4.4%;
+      height: 50%;
+      background: #ffffff; }
+    .text-card--bottom-angle:after {
+      bottom: 75%;
+      transform-origin: right bottom;
+      transform: skewY(-5deg);
+      width: 4.4%;
+      height: 50%;
+      background: #ffffff; } }
+
 .description__cards {
   width: 70%;
   margin-left: 22%;
   padding: 35px 0px; }
+
+@media (min-width: 768px) {
+  .description {
+    display: flex;
+    flex-wrap: wrap; }
+    .description__image {
+      width: 67%;
+      height: 257px;
+      overflow: hidden; }
+      .description__image--bridge {
+        order: -1; }
+    .description__cards {
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 160px;
+      padding-bottom: 32px;
+      display: flex; } }
 
 .cards__caption {
   color: #000000;
@@ -294,6 +402,44 @@ table {
   .cards__part:last-child {
     margin-bottom: 0px; }
 
+@media (min-width: 768px) {
+  .cards__part {
+    width: 33.3%;
+    text-align: center; }
+    .cards__part--gift {
+      order: 2; }
+    .cards__part--food {
+      order: 1; }
+  .cards__caption {
+    font-size: 21px;
+    margin-bottom: 23px; }
+    .cards__caption--house:before {
+      width: 78px;
+      height: 74px;
+      top: -105px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: cover; }
+    .cards__caption--food:before {
+      width: 80px;
+      height: 70px;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: cover; }
+    .cards__caption--gift:before {
+      width: 64px;
+      height: 76px;
+      top: -105px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: cover; }
+  .cards__topic {
+    width: 70%;
+    margin: 0 auto; }
+    .cards__topic--food {
+      width: 60%; } }
+
 .sight__part {
   background-color: #eeeeee; }
 
@@ -323,6 +469,36 @@ table {
   font-size: 14px;
   line-height: 1.5em; }
 
+@media (min-width: 768px) {
+  .sight {
+    display: flex;
+    flex-wrap: wrap; }
+    .sight__part {
+      width: 100%; }
+    .sight__cards {
+      width: 100%;
+      display: flex;
+      order: -1; }
+    .sight__card {
+      width: 33.3%;
+      padding-top: 45px;
+      padding-bottom: 45px; }
+    .sight__caption {
+      font-size: 21px;
+      width: 60%;
+      line-height: 1.2em;
+      margin: 0 auto; }
+    .sight__number {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 20px; }
+    .sight__topic {
+      width: 60%;
+      margin: 0 auto; }
+      .sight__topic--left {
+        width: 70%;
+        hyphens: auto; } }
+
 .order-card {
   padding-top: 30px;
   padding-bottom: 32px; }
@@ -339,6 +515,18 @@ table {
       color: #333333;
       font-size: 14px;
       line-height: 1.9em; }
+
+@media (min-width: 768px) {
+  .order-card {
+    padding-top: 50px;
+    padding-bottom: 42px; }
+    .order-card__text--caption {
+      font-size: 30px;
+      margin-bottom: 30px; }
+    .order-card__text--topic {
+      line-height: 1.75em; }
+    .order-card__text--topic-tablet {
+      display: block; } }
 
 .order__button {
   display: block;
@@ -359,6 +547,11 @@ table {
   .order__button:active {
     background-color: #ffffff;
     color: #81b3d2; }
+
+@media (min-width: 768px) {
+  .order__button {
+    width: 60%;
+    margin-bottom: 55px; } }
 
 .footer-page {
   padding-top: 40px;
@@ -399,3 +592,18 @@ table {
   .footer-page__copyrights-logo {
     display: inline-block;
     vertical-align: middle; }
+
+@media (min-width: 768px) {
+  .footer-page {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px; }
+    .footer-page__tag {
+      margin-top: 13px;
+      margin-left: 5px; }
+    .footer-page__socials {
+      margin: 0; }
+    .footer-page__copyrights {
+      margin: 0;
+      margin-top: 7px;
+      margin-right: -15px; } }

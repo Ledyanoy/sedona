@@ -18,3 +18,23 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .order-card {
+        padding-top: 50px; 
+        padding-bottom: 42px;
+        &__text {            
+            &--caption{                       
+                font-size: 30px;
+                margin-bottom: 30px;                          
+            }
+            &--topic {
+                line-height: 1.75em; 
+            } 
+            &--topic-tablet {
+                display: block; 
+            } 
+        }        
+    }
+
+}

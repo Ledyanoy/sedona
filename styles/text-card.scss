@@ -34,3 +34,33 @@
           }                      
     }
 }
+
+@media (min-width: 768px) {
+    .text-card {
+        &--blue {
+            width: 33%; 
+            height: 175px;       
+        }       
+        &--bottom-angle {
+            overflow: visible;
+            padding-bottom: 50px;                                 
+            &:before { 
+                bottom: 75%;                            
+                transform-origin: left bottom;
+                transform: skewY(5deg);
+                width: 4.4%;
+                height: 50%; 
+                background: $menu-text-color;                                                                   
+            }
+            &:after {
+                bottom: 75%;                            
+                transform-origin: right bottom;
+                transform: skewY(-5deg);
+                width: 4.4%;
+                height: 50%; 
+                background: $menu-text-color; 
+            }                     
+        }
+    }
+
+}

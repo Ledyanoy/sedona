@@ -22,3 +22,13 @@
         }               
     }
 }
+
+@media (min-width: 768px) {
+    .order {
+        &__button { 
+            width: 60%;
+            margin-bottom: 55px;  
+        }
+    } 
+
+}

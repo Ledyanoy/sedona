@@ -30,5 +30,42 @@
         line-height: 1.5em;                     
     } 
 }
-
+@media (min-width: 768px) {
+        .sight {
+        display: flex;
+        flex-wrap: wrap;
+        &__part{
+            width: 100%;        
+        }        
+        &__cards {
+            width: 100%;           
+            display: flex; 
+            order: -1;                                               
+        }
+        &__card {
+            width: 33.3%;            
+            padding-top: 45px;
+            padding-bottom: 45px;                                
+        } 
+        &__caption {                   
+            font-size: 21px;
+            width: 60%; 
+            line-height: 1.2em;
+            margin: 0 auto;                                                
+        } 
+        &__number {
+            display: block;
+            margin-top: 12px; 
+            margin-bottom: 20px;       
+        } 
+        &__topic {
+            width: 60%; 
+            margin: 0 auto;            
+            &--left {                
+                width: 70%;                 
+                hyphens: auto;
+            }                                             
+        }
+    }        
+}
 

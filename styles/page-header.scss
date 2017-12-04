@@ -81,3 +81,12 @@
         z-index: 1;                                
     }    
 }
+
+@media (min-width: 768px) {
+    .page-header__toggle {
+        display: none;
+    }   
+    .page-header__logo {
+        top: 0;              
+    }
+}

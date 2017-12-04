@@ -29,7 +29,11 @@
         </header>
         <main>
           <section class="intro">            
-            <div class="intro__image"><img src="pictures/text-index.png" alt="intro" class="intro__text">
+            <div class="intro__image">
+              <picture>
+                  <source media="(min-width: 768px)" srcset="pictures/text-index-tablet.png" class="intro__text--tablet intro__text">
+                  <img src="pictures/text-index.png" class="intro__text">
+              </picture>              
             </div>
             <div class="text-card text-card--bottom-angle">
               <h3 class="section__text section__text--caption">седона&nbsp;&mdash; небольшой 
@@ -47,21 +51,24 @@
                   седона не&nbsp;атракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <img src="pictures/photo-city.jpg" alt="city" width="100%">
+            <picture class="description__image">
+              <source media="(min-width: 768px)" srcset="pictures/photo-city-tablet.jpg">
+              <img src="pictures/photo-city.jpg" alt="city" width="100%">
+            </picture>
             <ul class="description__cards cards">
               <li class="cards__part">
                 <h3 class="cards__caption cards__caption--house">Жилье</h3>
                 <p class="cards__topic">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
               </p>
               </li>
-              <li class="cards__part">
+              <li class="cards__part cards__part--gift">
                 <h3 class="cards__caption cards__caption--gift">сувениры</h3>
                 <p class="cards__topic">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
                 </p>
               </li>
-              <li class="cards__part">
+              <li class="cards__part cards__part--food">
                 <h3 class="cards__caption cards__caption--food">еда</h3>
-                <p class="cards__topic">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                <p class="cards__topic cards__topic--food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
                 </p>
               </li>
             </ul>
@@ -73,27 +80,30 @@
                   Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь
               </p>
             </div>
-            <img src="pictures/photo-bridge.jpg" alt="bridge" width="100%">
+            <picture class="description__image description__image--bridge">
+              <source media="(min-width: 768px)" srcset="pictures/photo-bridge-tablet.jpg">
+              <img src="pictures/photo-bridge.jpg" alt="bridge" width="100%">
+            </picture>
             <div class="sight__part">
               <ul class="sight__cards">
                 <li class="sight__card">
                   <h3 class="sight__caption">небольшая площадь</h3>
-                  <p class="sight__topic"><span class="sight__number">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</span>                   
-                    все достопримечательности находятся очень близко
+                  <p class="sight__topic sight__topic--left"><span class="sight__number">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</span>                   
+                    все достопримеча&shy;тельности находятся очень близко
                   </p>
                 </li>
                 <li class="sight__card">
                   <h3 class="sight__caption">красивая дорога</h3>
                   <p class="sight__topic"><span class="sight__number">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</span>                      
-                      ехать в&nbsp;седону из&nbsp;лас-вегаса 
+                      ехать в&nbsp;седону&nbsp;из лас&#8209;вегаса 
                       совсем не&nbsp;скучно!
                   </p>
                 </li>
                 <li class="sight__card">
                   <h3 class="sight__caption">мало туристов</h3>
                   <p class="sight__topic"><span class="sight__number">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</span>                      
-                      Большинство едет в&nbsp;гранд каньон
-                      и&nbsp;толпится там
+                    Большинство едет&nbsp;в гранд каньон
+                    и толпится там
                   </p>
                 </li>
               </ul>
@@ -102,7 +112,7 @@
           <section class="order"> 
             <div class="order-card">
               <h2 class="order-card__text order-card__text--caption">заинтересовались?</h2>
-              <p class="order-card__text order-card__text--topic">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;
+              <p class="order-card__text order-card__text--topic"><span class="order-card__text--topic-tablet">Укажите предполагаемые даты поездки</span> и&nbsp;мы&nbsp;
                 покажем вам лучшие предложения гостиниц в&nbsp;седоне
               </p>
             </div>            

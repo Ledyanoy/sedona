@@ -45,3 +45,55 @@
         }
     }    
 }
+
+@media (min-width: 768px) {
+    .cards {
+        &__part {
+            width: 33.3%;
+            text-align: center;
+            &--gift {
+                order: 2;                
+            }
+            &--food {
+                order: 1;                
+            }
+        }
+        &__caption {                             
+            font-size: 21px;
+            margin-bottom: 23px;
+            &--house:before {                                          
+                width: 78px;
+                height: 74px;
+                top: -105px; 
+                left: 50%;
+                transform: translateX(-50%); 
+                background-size: cover;                                               
+            }             
+            &--food:before {                                          
+                width: 80px;
+                height: 70px;
+                top: -100px; 
+                left: 50%;
+                transform: translateX(-50%); 
+                background-size: cover;                                               
+            }            
+            &--gift:before {                                          
+                width: 64px;
+                height: 76px;
+                top: -105px; 
+                left: 50%;
+                transform: translateX(-50%); 
+                background-size: cover;                                               
+            } 
+                               
+        }
+        &__topic {
+            width: 70%; 
+            margin: 0 auto;
+            &--food {
+                width: 60%; 
+            }
+        }
+    } 
+
+}

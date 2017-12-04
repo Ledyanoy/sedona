@@ -34,3 +34,38 @@
     }     
 }
 
+@media (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;  
+        justify-content: space-between;
+        
+        &__item {                     
+            background: none;
+            width: 20%;            
+            &:not(:last-child) {
+                border-bottom: none;                         
+            } 
+            &:not(:first-child) {
+                border-top: none;
+            }
+            &:last-child {
+                box-shadow: none;                                
+            }
+            &:nth-child(2) {
+                margin-right: 20%;
+            }                                               
+        }
+        &__link {         
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $black-color;
+            font-weight: bold;
+            font-size: 14px; 
+            width: 100%;  
+            text-align: center;
+            padding: 20px 0px;
+            white-space: nowrap; 
+        } 
+    }
+}
+
