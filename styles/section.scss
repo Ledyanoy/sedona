@@ -61,7 +61,7 @@
                 line-height: 1.2em; 
             }
             &--topic-white {                
-                width: 65%;                                   
+                width: 70%;                                   
             }          
         }
         &__number {            
@@ -70,3 +70,28 @@
         }    
     }
 }
+
+@media (min-width: 1280px) {
+    .section {
+        &__text {       
+            &--caption {                                  
+                width: 50%;                                    
+            }
+            &--caption-white {  
+                margin-top: 13px;                       
+                 width: 38%;               
+            }
+            &--topic-white {
+                width: 65%;
+            }             
+            &--topic-right {
+                width: 55%;
+            } 
+            &--caption-white-angle {  
+                margin-top: 12px;                       
+                 width: 50%;               
+            }
+        }
+    }
+}
+

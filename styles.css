@@ -44,7 +44,17 @@ table {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
   .page__inner {
-    min-width: 290px; }
+    min-width: 290px;
+    max-width: 1279px; }
+
+@media (min-width: 1280px) {
+  .page {
+    background-color: #eeeeee; }
+    .page__inner {
+      width: 1200px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 8px 4px #dbdbdb; } }
 
 .page-header {
   position: relative; }
@@ -191,7 +201,7 @@ table {
   overflow: hidden; }
   .intro__image:before {
     content: '';
-    width: 50%;
+    width: 55%;
     height: 4em;
     position: absolute;
     background: #ffffff;
@@ -201,7 +211,7 @@ table {
     transform: skewY(9deg); }
   .intro__image:after {
     content: '';
-    width: 50%;
+    width: 55%;
     height: 4em;
     position: absolute;
     background: #ffffff;
@@ -220,8 +230,7 @@ table {
 @media (min-width: 768px) {
   .intro__image {
     margin-top: 0px;
-    padding-bottom: 220px;
-    background-image: url(pictures/back-desktop.jpg);
+    background-image: url(pictures/back-tablet.jpg);
     background-size: 101%;
     padding-bottom: 140px; }
     .intro__image:before {
@@ -230,6 +239,20 @@ table {
     .intro__image:after {
       height: 6.6em;
       right: 4.4%; } }
+
+@media (min-width: 1280px) {
+  .intro__image {
+    background-image: url(pictures/back-desktop.jpg);
+    background-size: inherit;
+    padding-bottom: 140px; }
+    .intro__image:before {
+      height: 6.6em;
+      left: 250px;
+      width: 360px; }
+    .intro__image:after {
+      height: 6.6em;
+      right: 250px;
+      width: 360px; } }
 
 .section__text {
   width: 80%;
@@ -280,10 +303,24 @@ table {
     margin-top: 5px;
     line-height: 1.2em; }
   .section__text--topic-white {
-    width: 65%; }
+    width: 70%; }
   .section__number {
     margin-top: 12px;
     margin-bottom: 20px; } }
+
+@media (min-width: 1280px) {
+  .section__text--caption {
+    width: 50%; }
+  .section__text--caption-white {
+    margin-top: 13px;
+    width: 38%; }
+  .section__text--topic-white {
+    width: 65%; }
+  .section__text--topic-right {
+    width: 55%; }
+  .section__text--caption-white-angle {
+    margin-top: 12px;
+    width: 50%; } }
 
 .text-card {
   padding-top: 40px;
@@ -338,6 +375,14 @@ table {
       width: 4.4%;
       height: 50%;
       background: #ffffff; } }
+
+@media (min-width: 1280px) {
+  .text-card--bottom-angle:before {
+    width: 250px;
+    height: 115px; }
+  .text-card--bottom-angle:after {
+    width: 250px;
+    height: 115px; } }
 
 .description__cards {
   width: 70%;
@@ -440,6 +485,14 @@ table {
     .cards__topic--food {
       width: 60%; } }
 
+@media (min-width: 1280px) {
+  .cards__topic--food {
+    width: 75%; }
+  .cards__topic--gift {
+    width: 60%; }
+  .cards__part {
+    margin-bottom: 50px; } }
+
 .sight__part {
   background-color: #eeeeee; }
 
@@ -498,8 +551,15 @@ table {
       width: 60%;
       margin: 0 auto; }
       .sight__topic--left {
-        width: 70%;
-        hyphens: auto; } }
+        width: 70%; } }
+
+@media (min-width: 1280px) {
+  .sight__caption {
+    width: 40%; }
+  .sight__topic {
+    width: 65%; }
+  .sight__card {
+    padding-bottom: 65px; } }
 
 .order-card {
   padding-top: 30px;
@@ -530,6 +590,11 @@ table {
     .order-card__text--topic-tablet {
       display: block; } }
 
+@media (min-width: 1280px) {
+  .order-card {
+    padding-top: 55px;
+    padding-bottom: 45px; } }
+
 .order__button {
   display: block;
   margin-left: auto;
@@ -554,6 +619,11 @@ table {
   .order__button {
     width: 60%;
     margin-bottom: 55px; } }
+
+@media (min-width: 1280px) {
+  .order__button {
+    width: 38%;
+    margin-bottom: 62px; } }
 
 .footer-page {
   padding-top: 40px;
@@ -609,3 +679,11 @@ table {
       margin: 0;
       margin-top: 7px;
       margin-right: -15px; } }
+
+@media (min-width: 1280px) {
+  .footer-page__tag {
+    margin-left: 10px; }
+  .footer-page__socials {
+    margin-right: 90px; }
+  .footer-page__copyrights {
+    margin-right: -100px; } }

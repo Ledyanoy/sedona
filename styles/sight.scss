@@ -66,9 +66,22 @@
             margin: 0 auto;            
             &--left {                
                 width: 70%;                 
-                hyphens: auto;
             }                                             
         }
     }        
+}
+@media (min-width: 1280px) {
+    .sight {       
+        &__caption {           
+            width: 40%;                                                            
+        }
+        &__topic {
+            width: 65%;
+        }
+        &__card {
+            padding-bottom: 65px;
+        }
+    }
+
 }
 

@@ -97,3 +97,16 @@
     } 
 
 }
+@media (min-width: 1280px) {
+    .cards {
+        &__topic--food {                             
+            width: 75%;
+        }
+        &__topic--gift {                             
+            width: 60%;
+        }
+        &__part {
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -32,3 +32,13 @@
     } 
 
 }
+
+@media (min-width: 1280px) {
+    .order {
+        &__button { 
+            width: 38%;
+            margin-bottom: 62px;  
+        }
+    } 
+
+}

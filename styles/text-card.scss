@@ -1,6 +1,6 @@
 .text-card {    
     padding-top: 40px; 
-    padding-bottom: 42px;     
+    padding-bottom: 42px;      
     &--blue {
         background-color: $menu-color;        
     }       
@@ -62,5 +62,23 @@
             }                     
         }
     }
+
+}
+
+@media (min-width: 1280px) {
+    .text-card {              
+        &--bottom-angle {                                             
+            &:before {                               
+                width: 250px;
+                height: 115px;                                                                                
+            }
+            &:after {
+                width: 250px;
+                height: 115px;                                          
+                
+            }                     
+        }
+    }
+
 
 }

@@ -12,7 +12,7 @@
         overflow: hidden;
         &:before {
             content: '';
-            width: 50%;            
+            width: 55%;            
             height: 4em;
             position: absolute;
             background: $menu-text-color;
@@ -23,7 +23,7 @@
           } 
           &:after {
             content: '';
-            width: 50%;
+            width: 55%;
             height: 4em;
             position: absolute;
             background: $menu-text-color;
@@ -47,9 +47,8 @@
 @media (min-width: 768px) {
     .intro {
         &__image {                  
-            margin-top: 0px;
-            padding-bottom: 220px;  
-            background-image: url(pictures/back-desktop.jpg);  
+            margin-top: 0px;              
+            background-image: url(pictures/back-tablet.jpg);  
             background-size: 101%; 
             padding-bottom: 140px;                       
             &:before {                
@@ -60,6 +59,26 @@
                 height: 6.6em;
                 right: 4.4%; 
             }       
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .intro {
+        &__image {             
+            background-image: url(pictures/back-desktop.jpg); 
+            background-size: inherit;             
+            padding-bottom: 140px;            
+            &:before {                
+                height: 6.6em;
+                left: 250px;
+                width: 360px;                  
+            } 
+            &:after {                
+                height: 6.6em;
+                right: 250px;
+                width: 360px; 
+            }              
         }
     }
 }

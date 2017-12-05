@@ -25,12 +25,18 @@
               <span class="page-header__toggle-name-hidden">открыть</span>
             </button>
           </div>
-          <a href="" class="page-header__logo"><img src="pictures/logotyle-mobile.png" alt="logo"></a>
+          <a href="" class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="pictures/logotype-desktop.png">
+              <source media="(min-width: 768px)" srcset="pictures/logotype-tablet.png">
+              <img src="pictures/logotyle-mobile.png" alt="logo">
+            </picture>
+          </a>
         </header>
         <main>
           <section class="intro">            
             <div class="intro__image">
-              <picture>
+              <picture>                  
                   <source media="(min-width: 768px)" srcset="pictures/text-index-tablet.png" class="intro__text--tablet intro__text">
                   <img src="pictures/text-index.png" class="intro__text">
               </picture>              
@@ -52,6 +58,7 @@
               </p>
             </div>
             <picture class="description__image">
+              <source media="(min-width: 1280px)" srcset="pictures/photo-city-desktop.jpg">
               <source media="(min-width: 768px)" srcset="pictures/photo-city-tablet.jpg">
               <img src="pictures/photo-city.jpg" alt="city" width="100%">
             </picture>
@@ -63,7 +70,7 @@
               </li>
               <li class="cards__part cards__part--gift">
                 <h3 class="cards__caption cards__caption--gift">сувениры</h3>
-                <p class="cards__topic">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
+                <p class="cards__topic cards__topic--gift">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
                 </p>
               </li>
               <li class="cards__part cards__part--food">
@@ -76,11 +83,12 @@
           <section class="sight">
             <div class="text-card text-card--blue"> 
               <h3 class="section__text section__text--caption-white">там есть мост дьявола</h3>
-              <p class="section__text section__text--topic-white"><span class="section__number">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</span>               
+              <p class="section__text section__text--topic-white section__text--topic-right"><span class="section__number">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</span>               
                   Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь
               </p>
             </div>
             <picture class="description__image description__image--bridge">
+                <source media="(min-width: 1280px)" srcset="pictures/photo-bridge-desktop.jpg">
               <source media="(min-width: 768px)" srcset="pictures/photo-bridge-tablet.jpg">
               <img src="pictures/photo-bridge.jpg" alt="bridge" width="100%">
             </picture>
