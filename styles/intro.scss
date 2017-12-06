@@ -53,11 +53,13 @@
             padding-bottom: 140px;                       
             &:before {                
                 height: 6.6em;
-                left: 4.4%;                  
+                left: 4.4%; 
+                transform: skewY(8deg);                 
             } 
             &:after {                
                 height: 6.6em;
-                right: 4.4%; 
+                right: 4.4%;
+                transform: skewY(-8deg);  
             }       
         }
     }
@@ -72,12 +74,12 @@
             &:before {                
                 height: 6.6em;
                 left: 250px;
-                width: 360px;                  
+                width: 360px;                                   
             } 
             &:after {                
                 height: 6.6em;
                 right: 250px;
-                width: 360px; 
+                width: 360px;                 
             }              
         }
     }

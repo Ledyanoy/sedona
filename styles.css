@@ -235,10 +235,12 @@ table {
     padding-bottom: 140px; }
     .intro__image:before {
       height: 6.6em;
-      left: 4.4%; }
+      left: 4.4%;
+      transform: skewY(8deg); }
     .intro__image:after {
       height: 6.6em;
-      right: 4.4%; } }
+      right: 4.4%;
+      transform: skewY(-8deg); } }
 
 @media (min-width: 1280px) {
   .intro__image {
@@ -365,14 +367,14 @@ table {
       bottom: 75%;
       transform-origin: left bottom;
       transform: skewY(5deg);
-      width: 4.4%;
+      width: 5%;
       height: 50%;
       background: #ffffff; }
     .text-card--bottom-angle:after {
       bottom: 75%;
       transform-origin: right bottom;
       transform: skewY(-5deg);
-      width: 4.4%;
+      width: 5%;
       height: 50%;
       background: #ffffff; } }
 
