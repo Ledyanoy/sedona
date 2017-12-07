@@ -1,20 +1,17 @@
 .page {  
     font-family: $font-primary; 
-    text-transform: uppercase;             
+    text-transform: uppercase; 
+    @media (min-width: 1280px) { 
+        background-color: $sight-back-color;
+    }             
     &__inner {
         min-width: 290px;
-        max-width: 1279px;           
-    }  
-}
-
-@media (min-width: 1280px) {
-    .page {
-        background-color: $sight-back-color;
-        &__inner {
+        max-width: 1279px;
+        @media (min-width: 1280px) { 
             width: 1200px; 
             margin: 0 auto;
             background-color: $menu-text-color;
             box-shadow: 0 0 8px 4px $body-shadow;
-        }  
-    }
+        }            
+    }  
 }

@@ -43,18 +43,18 @@ table {
 .page {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
+  @media (min-width: 1280px) {
+    .page {
+      background-color: #eeeeee; } }
   .page__inner {
     min-width: 290px;
     max-width: 1279px; }
-
-@media (min-width: 1280px) {
-  .page {
-    background-color: #eeeeee; }
-    .page__inner {
-      width: 1200px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      box-shadow: 0 0 8px 4px #dbdbdb; } }
+    @media (min-width: 1280px) {
+      .page__inner {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 4px #dbdbdb; } }
 
 .page-header {
   position: relative; }
@@ -597,11 +597,22 @@ table {
     padding-top: 55px;
     padding-bottom: 45px; } }
 
-.order__button {
+.order__btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 45px;
+  margin-bottom: 45px; }
+
+@media (min-width: 768px) {
+  .order__btn {
+    width: 60%;
+    margin-bottom: 55px; } }
+
+@media (min-width: 1280px) {
+  .order__btn {
+    margin-bottom: 62px; } }
+
+.search-button {
   height: 60px;
   width: 87.5%;
   text-align: center;
@@ -611,21 +622,17 @@ table {
   font-size: 21px;
   font-weight: bold;
   cursor: pointer; }
-  .order__button:hover {
+  .search-button:hover {
     filter: blur(1px); }
-  .order__button:active {
+  .search-button:active {
     background-color: #ffffff;
     color: #81b3d2; }
-
-@media (min-width: 768px) {
-  .order__button {
-    width: 60%;
-    margin-bottom: 55px; } }
-
-@media (min-width: 1280px) {
-  .order__button {
-    width: 38%;
-    margin-bottom: 62px; } }
+  @media (min-width: 768px) {
+    .search-button {
+      width: 60%; } }
+  @media (min-width: 1280px) {
+    .search-button {
+      width: 38%; } }
 
 .footer-page {
   padding-top: 40px;

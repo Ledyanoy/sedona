@@ -1,44 +1,25 @@
 .order {
-    &__button {        
+    &__btn {        
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 45px; 
-        height: 60px;
-        width: 87.5%;       
-        text-align: center;       
-        background-color: $menu-color; 
-        border: none; 
-        color: $menu-text-color;
-        font-size: 21px;
-        font-weight: bold;
-        cursor: pointer;        
-        &:hover {            
-            filter: blur(1px);  
-        } 
-        &:active {            
-            background-color: $menu-text-color;
-            color: $menu-color;
-        }               
+        margin-bottom: 45px;         
     }
 }
 
 @media (min-width: 768px) {
     .order {
-        &__button { 
+        &__btn { 
             width: 60%;
             margin-bottom: 55px;  
         }
-    } 
-
+    }
 }
 
 @media (min-width: 1280px) {
     .order {
-        &__button { 
-            width: 38%;
+        &__btn {             
             margin-bottom: 62px;  
         }
     } 
-
 }
