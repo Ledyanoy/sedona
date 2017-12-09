@@ -1,6 +1,6 @@
 .main-menu {
     display: flex;   
-    flex-direction: column;                                
+    flex-direction: column;                                 
     &__item {
         display: flex;         
         background: $menu-color;
@@ -30,15 +30,24 @@
         &:active {            
             background: $menu-text-color; 
             color: $menu-color;                     
-        }                            
+        }
+    }
+    &__open {
+        display: none;                             
     }     
+    &--close  {
+        .main-menu__item {
+            display: none;                       
+        } 
+        .main-menu__close {
+            display: none;
+        }          
+    }    
 }
-
 @media (min-width: 768px) {
     .main-menu {
         flex-direction: row;  
-        justify-content: space-between;
-        
+        justify-content: space-between;        
         &__item {                     
             background: none;
             width: 20%;            
@@ -68,4 +77,3 @@
         } 
     }
 }
-
