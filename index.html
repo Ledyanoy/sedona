@@ -9,21 +9,23 @@
     <body class="page"> 
       <div class="page__inner">
         <header class="page-header">
-          <ul class="main-menu main-menu--close">
-            <li class="main-menu__item"><a href="" class="main-menu__link">Главная</a></li>
-            <li class="main-menu__item"><a href="" class="main-menu__link">Фото и видео</a></li> 
-            <li class="main-menu__item"><a href="" class="main-menu__link">Форма отзыва</a></li> 
-            <li class="main-menu__item"><a href="" class="main-menu__link">HTML Academy</a></li>                  
-          </ul> 
-          <div class="main-menu__close toggle toggle--close">
-            <button class="toggle-button">
-              <span class="visually-hidden">закрыть</span>
-            </button>
-          </div>
-          <div class="main-menu__open toggle toggle--open">
-            <button class="toggle-button">
-              <span class="visually-hidden">открыть</span>
-            </button>
+          <div class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a href="" class="main-menu__link">Главная</a></li>
+              <li class="main-menu__item"><a href="" class="main-menu__link">Фото и видео</a></li> 
+              <li class="main-menu__item"><a href="" class="main-menu__link">Форма отзыва</a></li> 
+              <li class="main-menu__item"><a href="" class="main-menu__link">HTML Academy</a></li>                  
+            </ul> 
+            <div class="main-menu__btn main-menu__btn--close">
+              <button class="toggle-button" data-togglr-target=".main-menu" data-togglr-remove="main-menu--open">
+                <span class="visually-hidden">закрыть</span>
+              </button>
+            </div>
+            <div class="main-menu__btn main-menu__btn--open">
+              <button class="toggle-button" data-togglr-target=".main-menu" data-togglr-add="main-menu--open">
+                <span class="visually-hidden">открыть</span>
+              </button>
+            </div>
           </div>
           <a href="" class="page-header__logo">
             <picture>
@@ -142,4 +144,5 @@
           </div>
         </footer>
       </div>
+      <script src="http://stefano.io/togglr/dist/togglr.min.js"></script>
     </body>

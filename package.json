@@ -20,7 +20,9 @@
     "url": "https://github.com/Ledyanoy/sedona/issues"
   },
   "homepage": "https://github.com/Ledyanoy/sedona#readme",
-  "dependencies": {},
+  "dependencies": {
+    "togglr": "^1.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "concurrently": "^3.5.1",
