@@ -1,0 +1,145 @@
+.form-card {    
+    padding-top: 15px;     
+    border-bottom: 1px solid $form-card-border;
+    &:last-child {
+        border-bottom: none; 
+    }
+    &--name {
+        padding-top: 17px;
+        padding-bottom: 3px;
+    }
+    &--contact {
+        padding-top: 17px;
+        padding-bottom: 6px;
+    } 
+    &--impression {
+        padding-top: 17px;
+        padding-bottom: 17px;        
+    }
+    &--feedback {
+        padding-top: 17px;
+        padding-bottom: 35px;
+    }     
+    &__text {               
+        width: 95%; 
+        text-align: center;
+        margin: 0 auto;
+        &--caption {
+            color: $black-color;        
+            font-size: 18px;
+            font-weight: bold; 
+            margin-bottom: 25px; 
+            line-height: 1.5em;                    
+        } 
+        &--topic {
+            color: $topic-color;        
+            font-size: 14px;
+            line-height: 1.8em; 
+            margin-bottom: 13px;                      
+        }
+        &--radio {
+            font-size:  18px;
+            font-weight: bold;
+            text-transform: none;                 
+        }
+    } 
+    &__graphs {
+        width: 92%; 
+        margin: 0 auto;        
+        margin-top: -5px;       
+    }
+    &__graph {               
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px; 
+        width: 100%;
+        &--contact {
+            flex-wrap: wrap;            
+        }              
+    }
+    &__radiobtn { 
+        line-height: 57px; 
+        margin-bottom: 13px;                           
+    }
+    &__check {
+        margin-top: -10px; /* поднял первую строу для pp */ 
+        line-height: 55px;
+        margin-bottom: 34px; 
+        &:last-child {
+            margin-bottom: 9px;  /* убрал лишний отступ */ 
+        }                                    
+    }
+    &__name {        
+        color: $topic-color;
+        margin-right: 15px;               
+    }
+    &__input {
+        border: none;
+        color: $black-color;
+        background-color: $form-input-pace; 
+        font-size:  18px;
+        font-weight: bold;
+        padding: 18px;
+        width: 100%;
+        flex-grow: 1; 
+        &--contact {
+            margin-top: 10px;
+            width: 60%;
+        } 
+        &--story {                       
+            padding-top: 15px;
+            line-height: 1.4em;
+            word-spacing: -2px; /* сужаю расстояние между словами для pp*/
+            resize: none;            
+            margin-bottom: 27px;/*сдвигаю кнопку ниже*/
+        }        
+    }    
+    &__item {        
+        color: $topic-color;
+        margin-left: 20px;
+        width: 100%;
+        margin-top: 5px;
+        &--error {
+            color: $form-error;
+            text-transform: none; 
+            margin-top: 7px;
+            margin-bottom: -5px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
+        }                              
+    } 
+    &__icons {        
+        background-color: $form-icons;         
+        padding: 19px 20px 20px;         
+        margin-top: 12px;  /* выровнял иконку относительно инпута*/ 
+        &--mail {
+            padding: 21px 21px 24px; 
+        } 
+        &:hover {
+            filter: blur(1px);
+        }                            
+    }
+    &__radio {
+        display: none; /* ниже меняю стиль радиобоксов */ 
+        & + label {
+            display: block;
+            width: 56px;
+            height: 56px; 
+            background: url("pictures/radio.png") no-repeat;
+            cursor: pointer;
+            padding-left: 78px;
+        }
+        &:checked + label { 
+            display: block;                     
+            background: url("pictures/radio-checked.svg") no-repeat 17px, url("pictures/radio.png") no-repeat;
+            cursor: pointer;                      
+        } 
+        &--check {
+            & + label {                
+                background: url("pictures/check-box.png") no-repeat;                
+            }
+            &:checked + label {                                   
+                background: url("pictures/tick.svg") no-repeat 17px, url("pictures/check-box.png") no-repeat;
+            }                
+        }            
+    }        
+} 

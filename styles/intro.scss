@@ -20,8 +20,8 @@
             bottom: 0;  
             transform-origin: left bottom;
             transform: skewY(9deg);                                  
-          } 
-          &:after {
+        } 
+        &:after {
             content: '';
             width: 55%;
             height: 4em;
@@ -32,7 +32,13 @@
             right: 0; 
             transform-origin: right bottom;
             transform: skewY(-9deg);                       
-          }                              
+        } 
+        &--form {
+            padding-top: 60px;
+            padding-bottom: 110px;
+            background-position: 0px -205px;
+            margin-bottom: -18px;                        
+        }                             
     }
     &__text {  
         display: block;       
@@ -40,7 +46,7 @@
         &--tablet  {
             margin-top: -10px;
         }            
-    }
+    }    
     
 }
 

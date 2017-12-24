@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,74 +69,6 @@ table {
 @media (min-width: 768px) {
   .page-header__logo {
     top: 0; } }
-
-.toggle {
-  width: 70px;
-  height: 50px;
-  background: transparent;
-  border: none; }
-  @media (min-width: 768px) {
-    .toggle {
-      display: none; } }
-  .toggle:hover {
-    filter: blur(1px); }
-  .toggle:active {
-    opacity: 0.5; }
-  .toggle--close {
-    top: 0px;
-    right: 0px; }
-    .toggle--close:after {
-      content: "";
-      position: absolute;
-      top: 25px;
-      right: 18px;
-      width: 27px;
-      height: 4px;
-      background-color: #ffffff;
-      transform: rotate(45deg); }
-    .toggle--close:before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      right: 18px;
-      width: 27px;
-      height: 4px;
-      background-color: #ffffff;
-      transform: rotate(-45deg); }
-  .toggle--open {
-    top: 0px;
-    right: 0px; }
-    .toggle--open:after {
-      content: "";
-      position: absolute;
-      top: 14px;
-      right: 20px;
-      width: 23px;
-      height: 4px;
-      background-color: #81b3d2;
-      box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2; }
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden; }
-
-.toggle-button {
-  width: 70px;
-  height: 50px;
-  background: transparent;
-  border: none;
-  cursor: pointer; }
-  .toggle-button:hover {
-    filter: blur(1px); }
-  .toggle-button:active {
-    opacity: 0.5; }
 
 .main-menu__list {
   display: flex;
@@ -241,6 +174,28 @@ table {
     padding: 20px 0px;
     white-space: nowrap; } }
 
+.toggle-button {
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer; }
+  .toggle-button:hover {
+    filter: blur(1px); }
+  .toggle-button:active {
+    opacity: 0.5; }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; }
+
 .intro__image {
   position: relative;
   display: block;
@@ -273,6 +228,11 @@ table {
     right: 0;
     transform-origin: right bottom;
     transform: skewY(-9deg); }
+  .intro__image--form {
+    padding-top: 60px;
+    padding-bottom: 110px;
+    background-position: 0px -205px;
+    margin-bottom: -18px; }
 
 .intro__text {
   display: block;
@@ -438,6 +398,127 @@ table {
   .text-card--bottom-angle:after {
     width: 250px;
     height: 115px; } }
+
+.form-card {
+  padding-top: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .form-card:last-child {
+    border-bottom: none; }
+  .form-card--name {
+    padding-top: 17px;
+    padding-bottom: 3px; }
+  .form-card--contact {
+    padding-top: 17px;
+    padding-bottom: 6px; }
+  .form-card--impression {
+    padding-top: 17px;
+    padding-bottom: 17px; }
+  .form-card--feedback {
+    padding-top: 17px;
+    padding-bottom: 35px; }
+  .form-card__text {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto; }
+    .form-card__text--caption {
+      color: #000000;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      line-height: 1.5em; }
+    .form-card__text--topic {
+      color: #333333;
+      font-size: 14px;
+      line-height: 1.8em;
+      margin-bottom: 13px; }
+    .form-card__text--radio {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: none; }
+  .form-card__graphs {
+    width: 92%;
+    margin: 0 auto;
+    margin-top: -5px; }
+  .form-card__graph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    width: 100%; }
+    .form-card__graph--contact {
+      flex-wrap: wrap; }
+  .form-card__radiobtn {
+    line-height: 57px;
+    margin-bottom: 13px; }
+  .form-card__check {
+    margin-top: -10px;
+    /* поднял первую строу для pp */
+    line-height: 55px;
+    margin-bottom: 34px; }
+    .form-card__check:last-child {
+      margin-bottom: 9px;
+      /* убрал лишний отступ */ }
+  .form-card__name {
+    color: #333333;
+    margin-right: 15px; }
+  .form-card__input {
+    border: none;
+    color: #000000;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px;
+    width: 100%;
+    flex-grow: 1; }
+    .form-card__input--contact {
+      margin-top: 10px;
+      width: 60%; }
+    .form-card__input--story {
+      padding-top: 15px;
+      line-height: 1.4em;
+      word-spacing: -2px;
+      /* сужаю расстояние между словами для pp*/
+      resize: none;
+      margin-bottom: 27px;
+      /*сдвигаю кнопку ниже*/ }
+  .form-card__item {
+    color: #333333;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 5px; }
+    .form-card__item--error {
+      color: #ff5c5c;
+      text-transform: none;
+      margin-top: 7px;
+      margin-bottom: -5px;
+      /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/ }
+  .form-card__icons {
+    background-color: #e6e6e6;
+    padding: 19px 20px 20px;
+    margin-top: 12px;
+    /* выровнял иконку относительно инпута*/ }
+    .form-card__icons--mail {
+      padding: 21px 21px 24px; }
+    .form-card__icons:hover {
+      filter: blur(1px); }
+  .form-card__radio {
+    display: none;
+    /* ниже меняю стиль радиобоксов */ }
+    .form-card__radio + label {
+      display: block;
+      width: 56px;
+      height: 56px;
+      background: url("pictures/radio.png") no-repeat;
+      cursor: pointer;
+      padding-left: 78px; }
+    .form-card__radio:checked + label {
+      display: block;
+      background: url("pictures/radio-checked.svg") no-repeat 17px, url("pictures/radio.png") no-repeat;
+      cursor: pointer; }
+    .form-card__radio--check + label {
+      background: url("pictures/check-box.png") no-repeat; }
+    .form-card__radio--check:checked + label {
+      background: url("pictures/tick.svg") no-repeat 17px, url("pictures/check-box.png") no-repeat; }
 
 .description__cards {
   width: 70%;
@@ -675,6 +756,8 @@ table {
   font-size: 21px;
   font-weight: bold;
   cursor: pointer; }
+  .search-button--feedback {
+    width: 100%; }
   .search-button:hover {
     filter: blur(1px); }
   .search-button:active {
@@ -749,3 +832,17 @@ table {
     margin-right: 90px; }
   .footer-page__copyrights {
     margin-right: -100px; } }
+
+::-webkit-input-placeholder {
+  color: #000000; }
+
+::-moz-placeholder {
+  color: #000000; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #000000; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #000000; }
