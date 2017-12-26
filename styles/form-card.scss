@@ -1,52 +1,143 @@
 .form-card {    
     padding-top: 15px;     
-    border-bottom: 1px solid $form-card-border;
+    border-bottom: 1px solid $form-card-border;    
+    @media (min-width: 768px) {
+        border-bottom: none;                 
+    }
     &:last-child {
         border-bottom: none; 
     }
     &--name {
         padding-top: 17px;
         padding-bottom: 3px;
+        @media (min-width: 768px) {
+            width: 41%;
+            padding-bottom: 25px; /* опустил нижний блок*/                      
+        }  
     }
     &--contact {
         padding-top: 17px;
         padding-bottom: 6px;
+        @media (min-width: 768px) {            
+            background: url("pictures/line.png") no-repeat 0% 11%,
+                        url("pictures/line.png") no-repeat 100% 11%; 
+            width: 100%;                    
+        }
     } 
     &--impression {
         padding-top: 17px;
-        padding-bottom: 17px;        
-    }
+        padding-bottom: 17px;
+        @media (min-width: 768px) {
+            order: -1; 
+            width: 59%; 
+            background: url("pictures/vertical-line.png") no-repeat 85% 35%;                     
+        }         
+    } 
+    &--visited {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        @media (min-width: 768px) {             
+            width: 100%; 
+            padding-top: 25px;
+            background: url("pictures/line.png") no-repeat 0% 17%,
+                        url("pictures/line.png") no-repeat 100% 17%;                                
+        } 
+    }   
     &--feedback {
         padding-top: 17px;
         padding-bottom: 35px;
+        @media (min-width: 768px) {             
+            width: 100%;
+            background: url("pictures/line.png") no-repeat 0% 7%,
+                        url("pictures/line.png") no-repeat 100% 7%;                                   
+        } 
     }     
     &__text {               
         width: 95%; 
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto;       
         &--caption {
             color: $black-color;        
             font-size: 18px;
             font-weight: bold; 
             margin-bottom: 25px; 
-            line-height: 1.5em;                    
+            line-height: 1.5em;
+            @media (min-width: 768px) {
+                font-size: 21px;                
+                &-tablet {
+                    font-size: 30px;
+                    margin-bottom: 22px; 
+                }  
+            }
         } 
         &--topic {
             color: $topic-color;        
             font-size: 14px;
             line-height: 1.8em; 
-            margin-bottom: 13px;                      
+            margin-bottom: 13px; 
+            @media (min-width: 768px) {
+                width: 60%;  
+            }                     
         }
         &--radio {
             font-size:  18px;
             font-weight: bold;
             text-transform: none;                 
         }
+        &--invisible-tbl {
+            @media (min-width: 768px) {
+                display: none;  
+            }  
+        }
+        &--visible-tbl {
+            display: none;
+            @media (min-width: 768px) { 
+                display: block;               
+            }  
+        }
+        &--tablet {
+            @media (min-width: 768px) {
+                margin-left: -45px; /* выровнял завголовок */ 
+                margin-bottom: 60px; 
+            }  
+        }
+        &--name-tbl {
+            @media (min-width: 768px) {
+                margin-left: -50px; /* выровнял завголовок */ 
+                margin-bottom: 60px;
+            }  
+        }
+        &--visited-tbl {
+            @media (min-width: 768px) {
+                width: 50%;
+            }  
+        }
+
     } 
     &__graphs {
         width: 92%; 
         margin: 0 auto;        
-        margin-top: -5px;       
+        margin-top: -5px; 
+        @media (min-width: 768px) {
+            width: 100%;  
+        } 
+        &--visited {
+            @media (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 70%;
+                margin-top: 45px;                
+            }
+        }
+        &--btn {
+            @media (min-width: 768px) {
+                display: flex;                
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;                             
+            }
+        }
     }
     &__graph {               
         display: flex; 
@@ -55,12 +146,15 @@
         margin-bottom: 22px; 
         width: 100%;
         &--contact {
-            flex-wrap: wrap;            
+            flex-wrap: wrap;                                
         }              
     }
     &__radiobtn { 
         line-height: 57px; 
-        margin-bottom: 13px;                           
+        margin-bottom: 13px; 
+        @media (min-width: 768px) {
+            margin-bottom: 22px; 
+        }                           
     }
     &__check {
         margin-top: -10px; /* поднял первую строу для pp */ 
@@ -68,11 +162,32 @@
         margin-bottom: 34px; 
         &:last-child {
             margin-bottom: 9px;  /* убрал лишний отступ */ 
-        }                                    
+        } 
+        &--bridge {
+            @media (min-width: 768px) {
+                order: -2; 
+                width: 40%;
+                margin-bottom: 42px;             
+            }
+        }
+        &--rock {
+            @media (min-width: 768px) {
+                order: -1;
+                width: 43%;    
+            }
+        } 
+        &--red {
+            @media (min-width: 768px) {                
+                width: 43%;    
+            }
+        }                                   
     }
     &__name {        
         color: $topic-color;
-        margin-right: 15px;               
+        margin-right: 15px;
+        @media (min-width: 768px) {
+            font-size: 14px;
+        }                       
     }
     &__input {
         border: none;
@@ -81,11 +196,11 @@
         font-size:  18px;
         font-weight: bold;
         padding: 18px;
-        width: 100%;
-        flex-grow: 1; 
+        width: 100%;         
         &--contact {
             margin-top: 10px;
-            width: 60%;
+            width: 50%; 
+            flex-grow: 1;                                  
         } 
         &--story {                       
             padding-top: 15px;
@@ -93,6 +208,10 @@
             word-spacing: -2px; /* сужаю расстояние между словами для pp*/
             resize: none;            
             margin-bottom: 27px;/*сдвигаю кнопку ниже*/
+            @media (min-width: 768px) {
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
         }        
     }    
     &__item {        
@@ -100,26 +219,51 @@
         margin-left: 20px;
         width: 100%;
         margin-top: 5px;
+        @media (min-width: 768px) {
+            order: -2;
+            margin-top: 10px;
+            margin-left: 25px;
+            font-size: 14px;
+            width: 50%;
+        } 
         &--error {
             color: $form-error;
             text-transform: none; 
             margin-top: 7px;
             margin-bottom: -5px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
+            @media (min-width: 768px) {
+                order: -1;
+                width: 30%;
+                margin-top: 2px; 
+                margin-right: -3px;                      
+            } 
+        }
+        &--mail {
+            @media (min-width: 768px) {                
+                margin-top: 5px;
+                margin-bottom: 5px;
+                
+            }                 
         }                              
     } 
     &__icons {        
-        background-color: $form-icons;         
-        padding: 19px 20px 20px;         
-        margin-top: 12px;  /* выровнял иконку относительно инпута*/ 
+        display: block;
+        width: 58px;
+        height: 57px;            
+        margin-top: 10px; 
+        background-color: $form-icons;
+        background-image: url("pictures/phone.svg");  
+        background-repeat: no-repeat;
+        background-position: 50%; 
         &--mail {
-            padding: 21px 21px 24px; 
-        } 
+            background-image: url("pictures/mail.svg");  
+        }           
         &:hover {
             filter: blur(1px);
-        }                            
+        }                                    
     }
     &__radio {
-        display: none; /* ниже меняю стиль радиобоксов */ 
+        display: none; /*убираю стандратные и ниже меняю стиль радиобоксов */ 
         & + label {
             display: block;
             width: 56px;
@@ -140,6 +284,43 @@
             &:checked + label {                                   
                 background: url("pictures/tick.svg") no-repeat 17px, url("pictures/check-box.png") no-repeat;
             }                
-        }            
+        } 
+    }
+    &--angle {        
+        @media (min-width: 768px) {
+            width: 100%;
+            overflow: visible;
+            position: relative;                                                                                          
+            &:before { 
+                content: '';
+                position: absolute;
+                bottom: 64%;                            
+                transform-origin: left bottom;
+                transform: skewY(5deg);
+                width: 4.5%;
+                height: 100%; 
+                background: $menu-text-color;                                                                                 
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 64%;
+                right: 0;                            
+                transform-origin: right bottom;
+                transform: skewY(-5deg);
+                width: 4.5%;
+                height: 100%; 
+                background: $menu-text-color;                 
+            }                  
+        }               
+    }
+    &__outer {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;        
+            width: 87%;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
     }        
 } 

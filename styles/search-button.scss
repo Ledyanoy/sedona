@@ -7,9 +7,18 @@
     color: $menu-text-color;
     font-size: 21px;
     font-weight: bold;
+    @media (min-width: 768px) {
+        width: 60%;
+    }
+    @media (min-width: 1280px) {
+        width: 38%;
+    } 
     cursor: pointer;
     &--feedback { 
-        width: 100%;       
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 50%;                       
+        }             
     }        
     &:hover {            
         filter: blur(1px);  
@@ -17,11 +26,5 @@
     &:active {            
         background-color: $menu-text-color;
         color: $menu-color;
-    } 
-    @media (min-width: 768px) {
-        width: 60%;
-    }
-    @media (min-width: 1280px) {
-        width: 38%;
-    }              
+    }                 
 }

@@ -36,75 +36,80 @@
             <h1 class="visually-hidden">welcome to the gargeous sedona "Because the Grand Vanuon sucks"!</h1>          
             <div class="intro__image intro__image--form">
               <picture>                  
-                  <source media="(min-width: 768px)" srcset="pictures/text-index-tablet.png" class="intro__text--tablet intro__text">
+                  <source media="(min-width: 768px)" srcset="pictures/text-form-t.png" class="intro__text--tablet intro__text">
                   <img src="pictures/text-form-m.png" class="intro__text">
               </picture>              
             </div>
-          </section>
-          <section class="form-card">
-            <h3 class="form-card__text form-card__text--caption">Оставьте свой отзыв
+          </section>          
+          <section class="form-card form-card--angle">
+            <h3 class="form-card__text form-card__text--caption form-card__text--caption-tablet">Оставьте свой отзыв
             </h3>
             <p class="form-card__text form-card__text--topic">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также&nbsp;о посещенных вами достопримечательностях
             </p>
           </section> 
-          <section class="form-card form-card--name">
-            <h3 class="form-card__text form-card__text--caption">Представьтесь, пожалуйста:
-            </h3>
-            <ul class="form-card__graphs">
-              <li class="form-card__graph">
-                <label for="name" class="form-card__name">Имя:</label>                
-                <input type="text" id="name" class="form-card__input">                              
-              </li>
-              <li class="form-card__graph">
-                <label for="surname" class="form-card__name">Фамилия:</label>                
-                <input type="text" id="surname" class="form-card__input">                              
-              </li> 
-              <li class="form-card__graph">
-                <label for="patronymic" class="form-card__name">Отчество:</label>                
-                <input type="text" id="patronymic" class="form-card__input">                              
-              </li> 
-          </ul>            
-          </section> 
-          <section class="form-card form-card--contact">
-            <h3 class="form-card__text form-card__text--caption">Контактная информация:
-            </h3>
-            <ul class="form-card__graphs">
-              <li class="form-card__graph form-card__graph--contact">
-                <label for="phone" class="form-card__item">Контактный телефон:</label>                
-                <input type="text" id="phone" value="Введите телефон" class="form-card__input form-card__input--contact">
-                <label for="phone"><img src="pictures/phone.svg" for="phone" alt="phone" class="form-card__icons"></label>
-                <label for="phone" class="form-card__item form-card__item--error">Ошибка, перепроверьте номер</label>                                          
-              </li>
-              <li class="form-card__graph form-card__graph--contact">
-                <label for="mail" class="form-card__item">Электронная почта:</label>                
-                <input type="text" id="mail" value="Введите e-mail" class="form-card__input form-card__input--contact">
-                <label for="mail"><img src="pictures/mail.svg" for="phone" alt="phone" class="form-card__icons form-card__icons--mail"></label>                                                         
-              </li>
-            </ul>
-          </section>
-          <section class="form-card form-card--impression">
-            <h3 class="form-card__text form-card__text--caption">Ваше Общее впечатление:
-            </h3>
-            <ul class="form-card__graphs">
-              <li class="form-card__radiobtn">
-                  <input type="radio" checked name="impression" id="positive" class="form-card__radio">
-                  <label for="positive" class="form-card__text--radio">Скорее&nbsp;положительное</label>                   
-              </li>
-              <li class="form-card__radiobtn">
-                  <input type="radio" name="impression" id="negative" class="form-card__radio">
-                  <label for="negative" class="form-card__text--radio">Скорее&nbsp;отрицательное</label>                   
-              </li>
-              <li class="form-card__radiobtn">
-                  <input type="radio" name="impression" id="trouble" class="form-card__radio">
-                  <label for="trouble" class="form-card__text--radio">Затрудняюсь&nbsp;ответить</label>                   
-              </li>
-            </ul>
-          </section> 
-          <section class="form-card form-card--impression">
-              <h3 class="form-card__text form-card__text--caption">посещенные достопримечательности:
+          <div class="form-card__outer">         
+            <section class="form-card form-card--name">
+              <h3 class="form-card__text form-card__text--caption form-card__text--name-tbl">Представьтесь<span class="form-card__text--invisible-tbl">, пожалуйста</span>:
               </h3>
               <ul class="form-card__graphs">
-                <li class="form-card__check">
+                <li class="form-card__graph">
+                  <label for="name" class="form-card__name">Имя:</label>                
+                  <input type="text" id="name" class="form-card__input">                              
+                </li>
+                <li class="form-card__graph">
+                  <label for="surname" class="form-card__name">Фамилия:</label>                
+                  <input type="text" id="surname" class="form-card__input">                              
+                </li> 
+                <li class="form-card__graph">
+                  <label for="patronymic" class="form-card__name">Отчество:</label>                
+                  <input type="text" id="patronymic" class="form-card__input">                              
+                </li> 
+            </ul>            
+            </section> 
+            <section class="form-card form-card--contact">
+              <h3 class="form-card__text form-card__text--caption">Контактная информация:
+              </h3>
+              <ul class="form-card__graphs">
+                <li class="form-card__graph form-card__graph--contact">
+                  <label for="phone" class="form-card__item">Контактный телефон:</label>                
+                  <input type="text" id="phone" placeholder="Введите телефон" class="form-card__input form-card__input--contact">
+                  <label for="phone">
+                    <div class="form-card__icons"></div>
+                  </label>
+                  <label for="phone" class="form-card__item form-card__item--error">Ошибка, перепроверьте номер</label>                                          
+                </li>
+                <li class="form-card__graph form-card__graph--contact">
+                  <label for="mail" class=" form-card__item form-card__item--mail">Электронная почта:</label>                
+                  <input type="text" id="mail" placeholder="Введите e-mail" class="form-card__input form-card__input--contact">
+                  <label for="mail">
+                    <div class="form-card__icons form-card__icons--mail"></div>
+                  </label>                                                         
+                </li>
+              </ul>
+            </section>
+            <section class="form-card form-card--impression">
+              <h3 class="form-card__text form-card__text--caption form-card__text--tablet">Ваше Общее впечатление:
+              </h3>
+              <ul class="form-card__graphs">
+                <li class="form-card__radiobtn">
+                    <input type="radio" checked name="impression" id="positive" class="form-card__radio">
+                    <label for="positive" class="form-card__text--radio">Скорее&nbsp;положительное</label>                   
+                </li>
+                <li class="form-card__radiobtn">
+                    <input type="radio" name="impression" id="negative" class="form-card__radio">
+                    <label for="negative" class="form-card__text--radio">Скорее&nbsp;отрицательное</label>                   
+                </li>
+                <li class="form-card__radiobtn">
+                    <input type="radio" name="impression" id="trouble" class="form-card__radio">
+                    <label for="trouble" class="form-card__text--radio">Затрудняюсь&nbsp;ответить</label>                   
+                </li>
+              </ul>
+            </section> 
+            <section class="form-card form-card--visited">
+              <h3 class="form-card__text form-card__text--caption form-card__text--visited-tbl">посещенные достопримечательности:
+              </h3>
+              <ul class="form-card__graphs form-card__graphs--visited">
+                <li class="form-card__check form-card__check--bridge">
                     <input type="checkbox" checked id="bridge" class="form-card__radio form-card__radio--check">
                     <label for="bridge" class="form-card__text--radio">Мост&nbsp;Дьявола</label>                   
                 </li>
@@ -112,11 +117,11 @@
                     <input type="checkbox" checked id="park" class="form-card__radio form-card__radio--check">
                     <label for="park" class="form-card__text--radio">Слайд&#8209;парк</label>                   
                 </li>
-                <li class="form-card__check">
+                <li class="form-card__check form-card__check--rock">
                     <input type="checkbox" id="rock" class="form-card__radio form-card__radio--check">
                     <label for="rock" class="form-card__text--radio">Гора&#8209;Колокол</label>                   
                 </li>
-                <li class="form-card__check">
+                <li class="form-card__check form-card__check--red">
                     <input type="checkbox" checked id="red" class="form-card__radio form-card__radio--check">
                     <label for="red" class="form-card__text--radio">Красные&nbsp;скалы</label>                   
                 </li>
@@ -128,10 +133,14 @@
                 <div class="form-card__graphs">
                   <div class="form-card__graph"> 
                     <textarea class="form-card__input form-card__input--story" rows=5 placeholder="Опишите&nbsp;подробно&nbsp;все&nbsp;свои восторги"></textarea>
-                  </div> 
-                  <button class="search-button search-button--feedback">ОТПРАВИТЬ ОТЗЫВ</button>  
+                  </div>
+                  <div class="form-card__graphs--btn"> 
+                    <button class="search-button search-button--feedback">ОТПРАВИТЬ ОТЗЫВ</button> 
+                    <span class="form-card__text--visible-tbl">* &mdash; обязательные поля</span> 
+                  </div>
                 </div>                            
-            </section>           
+            </section>
+          </div>           
         </main>
         <footer class="footer-page">
           <h2 class="footer-page__tag">#VISITSEDONA</h2>
