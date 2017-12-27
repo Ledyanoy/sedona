@@ -13,7 +13,10 @@
         @media (min-width: 768px) {
             width: 41%;
             padding-bottom: 25px; /* опустил нижний блок*/                      
-        }  
+        }
+        @media (min-width: 1280px) {
+            padding-top: 15px;                     
+        }             
     }
     &--contact {
         padding-top: 17px;
@@ -23,6 +26,10 @@
                         url("pictures/line.png") no-repeat 100% 11%; 
             width: 100%;                    
         }
+        @media (min-width: 1280px) {  
+            background: url("pictures/line-desk.png") no-repeat 0% 16%;                                 
+                               
+        }
     } 
     &--impression {
         padding-top: 17px;
@@ -31,7 +38,10 @@
             order: -1; 
             width: 59%; 
             background: url("pictures/vertical-line.png") no-repeat 85% 35%;                     
-        }         
+        } 
+        @media (min-width: 1280px) {
+            padding-top: 15px;                                
+        }              
     } 
     &--visited {
         padding-top: 17px;
@@ -42,6 +52,10 @@
             background: url("pictures/line.png") no-repeat 0% 17%,
                         url("pictures/line.png") no-repeat 100% 17%;                                
         } 
+        @media (min-width: 1280px) {
+            padding-bottom: 5px;
+            background: url("pictures/line-desk.png") no-repeat 0% 23%;                                          
+        }          
     }   
     &--feedback {
         padding-top: 17px;
@@ -50,7 +64,10 @@
             width: 100%;
             background: url("pictures/line.png") no-repeat 0% 7%,
                         url("pictures/line.png") no-repeat 100% 7%;                                   
-        } 
+        }
+        @media (min-width: 1280px) {          
+            background: url("pictures/line-desk.png") no-repeat 0% 7%;                                                         
+        }  
     }     
     &__text {               
         width: 95%; 
@@ -77,7 +94,11 @@
             margin-bottom: 13px; 
             @media (min-width: 768px) {
                 width: 60%;  
-            }                     
+            } 
+            @media (min-width: 1280px) {
+                width: 40%;
+                margin-bottom: 0px;                   
+            }                    
         }
         &--radio {
             font-size:  18px;
@@ -87,32 +108,51 @@
         &--invisible-tbl {
             @media (min-width: 768px) {
                 display: none;  
-            }  
+            } 
+            @media (min-width: 1280px) {
+                display: inline;                    
+            }                     
         }
         &--visible-tbl {
             display: none;
             @media (min-width: 768px) { 
                 display: block;               
-            }  
+            }               
         }
         &--tablet {
             @media (min-width: 768px) {
                 margin-left: -45px; /* выровнял завголовок */ 
                 margin-bottom: 60px; 
-            }  
+            }
+            @media (min-width: 1280px) {
+                margin-left: -55px; /* выровнял завголовок */ 
+                margin-bottom: 60px; 
+            }   
         }
         &--name-tbl {
             @media (min-width: 768px) {
                 margin-left: -50px; /* выровнял завголовок */ 
                 margin-bottom: 60px;
-            }  
+            }
+            @media (min-width: 1280px) {
+                width: 100%;
+                margin-left: -55px;                    
+            }   
         }
         &--visited-tbl {
             @media (min-width: 768px) {
                 width: 50%;
+            } 
+            @media (min-width: 1280px) {
+                width: 40%;
+                line-height: 1.2em;
             }  
         }
-
+        &--invisible-desk {
+            @media (min-width: 1280px) {
+                display: none;
+            }
+        }
     } 
     &__graphs {
         width: 92%; 
@@ -120,7 +160,7 @@
         margin-top: -5px; 
         @media (min-width: 768px) {
             width: 100%;  
-        } 
+        }         
         &--visited {
             @media (min-width: 768px) {
                 display: flex;
@@ -129,6 +169,11 @@
                 width: 70%;
                 margin-top: 45px;                
             }
+            @media (min-width: 1280px) {
+                width: 100%; 
+                flex-wrap: nowrap; 
+                margin-top: 53px;                                             
+            }
         }
         &--btn {
             @media (min-width: 768px) {
@@ -136,6 +181,16 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 25px;                             
+            }
+            @media (min-width: 1280px) {                
+                margin-bottom: 30px;                             
+            }
+        }
+        &--contact {
+            @media (min-width: 1280px) {
+                display: flex; 
+                margin-top: 42px;
+                justify-content: space-between;                                  
             }
         }
     }
@@ -146,8 +201,22 @@
         margin-bottom: 22px; 
         width: 100%;
         &--contact {
-            flex-wrap: wrap;                                
-        }              
+            flex-wrap: wrap;
+            @media (min-width: 1280px) {
+                width: 50%; 
+                
+            }                                           
+        } 
+        &--left {
+            @media (min-width: 1280px) {
+                width: 42%; 
+            } 
+        }
+        &--right {
+            @media (min-width: 1280px) {
+                margin-top: 20px; 
+            } 
+        }            
     }
     &__radiobtn { 
         line-height: 57px; 
@@ -159,15 +228,19 @@
     &__check {
         margin-top: -10px; /* поднял первую строу для pp */ 
         line-height: 55px;
-        margin-bottom: 34px; 
+        margin-bottom: 34px;         
         &:last-child {
             margin-bottom: 9px;  /* убрал лишний отступ */ 
-        } 
+        }         
         &--bridge {
             @media (min-width: 768px) {
                 order: -2; 
                 width: 40%;
                 margin-bottom: 42px;             
+            }
+            @media (min-width: 1280px) {             
+                width: 25%;  
+                margin-right: 60px;                       
             }
         }
         &--rock {
@@ -175,12 +248,24 @@
                 order: -1;
                 width: 43%;    
             }
+            @media (min-width: 1280px) {             
+                width: 25%; 
+                margin-right: 55px;                        
+            }
         } 
         &--red {
             @media (min-width: 768px) {                
                 width: 43%;    
             }
-        }                                   
+            @media (min-width: 1280px) {             
+                width: 25%;                         
+            }
+        }
+        &--park {            
+            @media (min-width: 1280px) {             
+                width: 30%;                         
+            }
+        }                                    
     }
     &__name {        
         color: $topic-color;
@@ -200,7 +285,12 @@
         &--contact {
             margin-top: 10px;
             width: 50%; 
-            flex-grow: 1;                                  
+            flex-grow: 1;
+            @media (min-width: 1280px) {
+                width: 40%; 
+                flex-grow: 1;
+                
+            }
         } 
         &--story {                       
             padding-top: 15px;
@@ -211,6 +301,9 @@
             @media (min-width: 768px) {
                 margin-top: 35px;
                 margin-bottom: 35px;
+            }
+            @media (min-width: 1280px) {                
+                margin-bottom: 38px;
             }
         }        
     }    
@@ -226,6 +319,12 @@
             font-size: 14px;
             width: 50%;
         } 
+        @media (min-width: 1280px) {
+            order: 0; 
+            width: 30%;
+            margin-left: 0px;
+                       
+        } 
         &--error {
             color: $form-error;
             text-transform: none; 
@@ -233,17 +332,31 @@
             margin-bottom: -5px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
             @media (min-width: 768px) {
                 order: -1;
-                width: 30%;
+                width: 31%;
                 margin-top: 2px; 
                 margin-right: -3px;                      
+            } 
+            @media (min-width: 1280px) {
+                order: -1;
+                width: 80%; 
+                margin-left: 26%;  /* подвинул вправо как в макете*/ 
+                margin-bottom: 5px;                                                 
             } 
         }
         &--mail {
             @media (min-width: 768px) {                
                 margin-top: 5px;
-                margin-bottom: 5px;
-                
+                margin-bottom: 5px;                              
+            } 
+            @media (min-width: 1280px) {                
+                margin-right: 20px;
+                margin-top: 15px;                                              
             }                 
+        }
+        &--phone {         
+            @media (min-width: 1280px) {                
+                margin-right: -35px;                                                 
+            } 
         }                              
     } 
     &__icons {        
@@ -312,7 +425,18 @@
                 height: 100%; 
                 background: $menu-text-color;                 
             }                  
-        }               
+        }
+        @media (min-width: 1280px) {
+            &:before {                
+                bottom: 105%;              
+                width: 25%;                                                                                                 
+            }
+            &:after {                
+                bottom: 105%;
+                right: 0;               
+                width: 25%; 
+            }               
+        }              
     }
     &__outer {
         @media (min-width: 768px) {
@@ -321,6 +445,9 @@
             width: 87%;
             margin: 0 auto;
             padding-top: 40px;
+        }
+        @media (min-width: 1280px) {                    
+            width: 80%;            
         }
     }        
 } 

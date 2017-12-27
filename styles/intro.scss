@@ -92,7 +92,12 @@
                 height: 6.6em;
                 right: 250px;
                 width: 360px;                 
-            }              
+            } 
+            &--form {  
+                padding-top: 115px;              
+                padding-bottom: 175px;                
+                margin-bottom: 30px; 
+            }             
         }
     }
 }

@@ -272,7 +272,11 @@ table {
     .intro__image:after {
       height: 6.6em;
       right: 250px;
-      width: 360px; } }
+      width: 360px; }
+    .intro__image--form {
+      padding-top: 115px;
+      padding-bottom: 175px;
+      margin-bottom: 30px; } }
 
 .section__text {
   width: 80%;
@@ -420,6 +424,9 @@ table {
         width: 41%;
         padding-bottom: 25px;
         /* опустил нижний блок*/ } }
+    @media (min-width: 1280px) {
+      .form-card--name {
+        padding-top: 15px; } }
   .form-card--contact {
     padding-top: 17px;
     padding-bottom: 6px; }
@@ -427,6 +434,9 @@ table {
       .form-card--contact {
         background: url("pictures/line.png") no-repeat 0% 11%, url("pictures/line.png") no-repeat 100% 11%;
         width: 100%; } }
+    @media (min-width: 1280px) {
+      .form-card--contact {
+        background: url("pictures/line-desk.png") no-repeat 0% 16%; } }
   .form-card--impression {
     padding-top: 17px;
     padding-bottom: 17px; }
@@ -435,6 +445,9 @@ table {
         order: -1;
         width: 59%;
         background: url("pictures/vertical-line.png") no-repeat 85% 35%; } }
+    @media (min-width: 1280px) {
+      .form-card--impression {
+        padding-top: 15px; } }
   .form-card--visited {
     padding-top: 17px;
     padding-bottom: 17px; }
@@ -443,6 +456,10 @@ table {
         width: 100%;
         padding-top: 25px;
         background: url("pictures/line.png") no-repeat 0% 17%, url("pictures/line.png") no-repeat 100% 17%; } }
+    @media (min-width: 1280px) {
+      .form-card--visited {
+        padding-bottom: 5px;
+        background: url("pictures/line-desk.png") no-repeat 0% 23%; } }
   .form-card--feedback {
     padding-top: 17px;
     padding-bottom: 35px; }
@@ -450,6 +467,9 @@ table {
       .form-card--feedback {
         width: 100%;
         background: url("pictures/line.png") no-repeat 0% 7%, url("pictures/line.png") no-repeat 100% 7%; } }
+    @media (min-width: 1280px) {
+      .form-card--feedback {
+        background: url("pictures/line-desk.png") no-repeat 0% 7%; } }
   .form-card__text {
     width: 95%;
     text-align: center;
@@ -474,6 +494,10 @@ table {
       @media (min-width: 768px) {
         .form-card__text--topic {
           width: 60%; } }
+      @media (min-width: 1280px) {
+        .form-card__text--topic {
+          width: 40%;
+          margin-bottom: 0px; } }
     .form-card__text--radio {
       font-size: 18px;
       font-weight: bold;
@@ -481,6 +505,9 @@ table {
     @media (min-width: 768px) {
       .form-card__text--invisible-tbl {
         display: none; } }
+    @media (min-width: 1280px) {
+      .form-card__text--invisible-tbl {
+        display: inline; } }
     .form-card__text--visible-tbl {
       display: none; }
       @media (min-width: 768px) {
@@ -491,14 +518,30 @@ table {
         margin-left: -45px;
         /* выровнял завголовок */
         margin-bottom: 60px; } }
+    @media (min-width: 1280px) {
+      .form-card__text--tablet {
+        margin-left: -55px;
+        /* выровнял завголовок */
+        margin-bottom: 60px; } }
     @media (min-width: 768px) {
       .form-card__text--name-tbl {
         margin-left: -50px;
         /* выровнял завголовок */
         margin-bottom: 60px; } }
+    @media (min-width: 1280px) {
+      .form-card__text--name-tbl {
+        width: 100%;
+        margin-left: -55px; } }
     @media (min-width: 768px) {
       .form-card__text--visited-tbl {
         width: 50%; } }
+    @media (min-width: 1280px) {
+      .form-card__text--visited-tbl {
+        width: 40%;
+        line-height: 1.2em; } }
+    @media (min-width: 1280px) {
+      .form-card__text--invisible-desk {
+        display: none; } }
   .form-card__graphs {
     width: 92%;
     margin: 0 auto;
@@ -513,12 +556,25 @@ table {
         justify-content: space-between;
         width: 70%;
         margin-top: 45px; } }
+    @media (min-width: 1280px) {
+      .form-card__graphs--visited {
+        width: 100%;
+        flex-wrap: nowrap;
+        margin-top: 53px; } }
     @media (min-width: 768px) {
       .form-card__graphs--btn {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 25px; } }
+    @media (min-width: 1280px) {
+      .form-card__graphs--btn {
+        margin-bottom: 30px; } }
+    @media (min-width: 1280px) {
+      .form-card__graphs--contact {
+        display: flex;
+        margin-top: 42px;
+        justify-content: space-between; } }
   .form-card__graph {
     display: flex;
     align-items: center;
@@ -527,6 +583,15 @@ table {
     width: 100%; }
     .form-card__graph--contact {
       flex-wrap: wrap; }
+      @media (min-width: 1280px) {
+        .form-card__graph--contact {
+          width: 50%; } }
+    @media (min-width: 1280px) {
+      .form-card__graph--left {
+        width: 42%; } }
+    @media (min-width: 1280px) {
+      .form-card__graph--right {
+        margin-top: 20px; } }
   .form-card__radiobtn {
     line-height: 57px;
     margin-bottom: 13px; }
@@ -546,13 +611,27 @@ table {
         order: -2;
         width: 40%;
         margin-bottom: 42px; } }
+    @media (min-width: 1280px) {
+      .form-card__check--bridge {
+        width: 25%;
+        margin-right: 60px; } }
     @media (min-width: 768px) {
       .form-card__check--rock {
         order: -1;
         width: 43%; } }
+    @media (min-width: 1280px) {
+      .form-card__check--rock {
+        width: 25%;
+        margin-right: 55px; } }
     @media (min-width: 768px) {
       .form-card__check--red {
         width: 43%; } }
+    @media (min-width: 1280px) {
+      .form-card__check--red {
+        width: 25%; } }
+    @media (min-width: 1280px) {
+      .form-card__check--park {
+        width: 30%; } }
   .form-card__name {
     color: #333333;
     margin-right: 15px; }
@@ -571,6 +650,10 @@ table {
       margin-top: 10px;
       width: 50%;
       flex-grow: 1; }
+      @media (min-width: 1280px) {
+        .form-card__input--contact {
+          width: 40%;
+          flex-grow: 1; } }
     .form-card__input--story {
       padding-top: 15px;
       line-height: 1.4em;
@@ -583,6 +666,9 @@ table {
         .form-card__input--story {
           margin-top: 35px;
           margin-bottom: 35px; } }
+      @media (min-width: 1280px) {
+        .form-card__input--story {
+          margin-bottom: 38px; } }
   .form-card__item {
     color: #333333;
     margin-left: 20px;
@@ -595,6 +681,11 @@ table {
         margin-left: 25px;
         font-size: 14px;
         width: 50%; } }
+    @media (min-width: 1280px) {
+      .form-card__item {
+        order: 0;
+        width: 30%;
+        margin-left: 0px; } }
     .form-card__item--error {
       color: #ff5c5c;
       text-transform: none;
@@ -604,13 +695,27 @@ table {
       @media (min-width: 768px) {
         .form-card__item--error {
           order: -1;
-          width: 30%;
+          width: 31%;
           margin-top: 2px;
           margin-right: -3px; } }
+      @media (min-width: 1280px) {
+        .form-card__item--error {
+          order: -1;
+          width: 80%;
+          margin-left: 26%;
+          /* подвинул вправо как в макете*/
+          margin-bottom: 5px; } }
     @media (min-width: 768px) {
       .form-card__item--mail {
         margin-top: 5px;
         margin-bottom: 5px; } }
+    @media (min-width: 1280px) {
+      .form-card__item--mail {
+        margin-right: 20px;
+        margin-top: 15px; } }
+    @media (min-width: 1280px) {
+      .form-card__item--phone {
+        margin-right: -35px; } }
   .form-card__icons {
     display: block;
     width: 58px;
@@ -666,6 +771,14 @@ table {
         width: 4.5%;
         height: 100%;
         background: #ffffff; } }
+  @media (min-width: 1280px) {
+    .form-card--angle:before {
+      bottom: 105%;
+      width: 25%; }
+    .form-card--angle:after {
+      bottom: 105%;
+      right: 0;
+      width: 25%; } }
   @media (min-width: 768px) {
     .form-card__outer {
       display: flex;
@@ -673,6 +786,9 @@ table {
       width: 87%;
       margin: 0 auto;
       padding-top: 40px; } }
+  @media (min-width: 1280px) {
+    .form-card__outer {
+      width: 80%; } }
 
 .description__cards {
   width: 70%;
