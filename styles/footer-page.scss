@@ -1,0 +1,87 @@
+.footer-page {
+    padding-top: 40px;
+    padding-bottom: 20px;     
+    &__tag {
+        text-align: center;        
+        color: $black-color;        
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
+    &__socials{        
+        margin: 0 auto;
+        width: 155px;
+        margin-bottom: 40px;
+        display: flex; 
+        justify-content: space-between;
+    }
+    &__icons {             
+        background-color: $menu-color;         
+        padding: 17px 14px;
+        &--facebook {
+            background-color: $menu-color; 
+            padding: 13px 19px 17px 19px;
+            &:hover {            
+                filter: blur(1px);  
+            }
+        } 
+        &:hover {            
+            filter: blur(1px);  
+        } 
+        &:active {            
+            opacity: 0.5;  
+        }                   
+      }
+    &__pic {
+        margin-top: 17px;
+        &--facebook {
+            margin-top: 13px;
+        }         
+    }
+    &__copyrights {
+        width: 150px;
+        margin: 0 auto;            
+    }
+    &__copyrights-name {
+        display: inline-block;
+            
+    }
+    &__copyrights-logo {
+        display: inline-block;
+        vertical-align: middle; 
+        
+    }
+}
+@media (min-width: 768px) {
+    .footer-page {
+        display: flex; 
+        justify-content: space-around;
+        padding-top: 35px;                
+        &__tag {
+            margin-top: 13px;
+            margin-left: 5px;            
+        } 
+        &__socials{        
+            margin: 0;            
+        }
+        &__copyrights {            
+            margin: 0;
+            margin-top: 7px;
+            margin-right: -15px;                        
+        }      
+    }
+}
+
+@media (min-width: 1280px) {
+    .footer-page {
+        &__tag {            
+            margin-left: 10px;
+        }
+        &__socials{        
+            margin-right: 90px;
+        }
+        &__copyrights {           
+            margin-right: -100px;                        
+        }                   
+    }
+}

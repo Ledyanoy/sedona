@@ -1,0 +1,84 @@
+.text-card {    
+    padding-top: 40px; 
+    padding-bottom: 42px;      
+    &--blue {
+        background-color: $menu-color;        
+    }       
+    &--bottom-angle {
+        position: relative;
+        overflow: hidden;
+        z-index: 2; 
+        padding-bottom: 73px;          
+        &:before {
+            content: '';
+            width: 50%;
+            height: 3em;
+            position: absolute;
+            background: $menu-color;
+            z-index: 1;
+            bottom: 0;  
+            transform-origin: left bottom;
+            transform: skewY(6deg);                       
+          } 
+          &:after {
+            content: '';
+            width: 50%;
+            height: 3em;
+            position: absolute;
+            background: $menu-color;
+            z-index: 1;
+            bottom: 0; 
+            right: 0; 
+            transform-origin: right bottom;
+            transform: skewY(-6deg);                       
+          }                      
+    }
+}
+
+@media (min-width: 768px) {
+    .text-card {
+        &--blue {
+            width: 33%; 
+            height: 175px;       
+        }       
+        &--bottom-angle {
+            overflow: visible;
+            padding-bottom: 50px;                                 
+            &:before { 
+                bottom: 75%;                            
+                transform-origin: left bottom;
+                transform: skewY(5deg);
+                width: 5%;
+                height: 50%; 
+                background: $menu-text-color;                                                                   
+            }
+            &:after {
+                bottom: 75%;                            
+                transform-origin: right bottom;
+                transform: skewY(-5deg);
+                width: 5%;
+                height: 50%; 
+                background: $menu-text-color; 
+            }                     
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .text-card {              
+        &--bottom-angle {                                             
+            &:before {                               
+                width: 250px;
+                height: 115px;                                                                                
+            }
+            &:after {
+                width: 250px;
+                height: 115px;                                          
+                
+            }                     
+        }
+    }
+
+
+}
