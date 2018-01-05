@@ -103,7 +103,10 @@
         &--radio {
             font-size:  18px;
             font-weight: bold;
-            text-transform: none;                 
+            text-transform: none;
+            &-topic {
+                margin-left: 78px;
+            }                            
         }
         &--invisible-tbl {
             @media (min-width: 768px) {
@@ -235,7 +238,7 @@
         &--bridge {
             @media (min-width: 768px) {
                 order: -2; 
-                width: 40%;
+                width: 50%;
                 margin-bottom: 42px;             
             }
             @media (min-width: 1280px) {             
@@ -332,9 +335,9 @@
             margin-bottom: -5px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
             @media (min-width: 768px) {
                 order: -1;
-                width: 31%;
-                margin-top: 2px; 
-                margin-right: -3px;                      
+                width: 200px;
+                margin-top: 2px;                       
+                margin-right: -9px;                                              
             } 
             @media (min-width: 1280px) {
                 order: -1;
@@ -381,21 +384,48 @@
             display: block;
             width: 56px;
             height: 56px; 
-            background: url("pictures/radio.png") no-repeat;
-            cursor: pointer;
-            padding-left: 78px;
+            background-color: $form-input-pace;
+            cursor: pointer;            
+            border-radius: 50%;
+                                   
         }
-        &:checked + label { 
-            display: block;                     
-            background: url("pictures/radio-checked.svg") no-repeat 17px, url("pictures/radio.png") no-repeat;
-            cursor: pointer;                      
+        &:checked + label {
+            display: block;
+            position: relative;
+            width: 56px;
+            height: 56px; 
+            background-color: $form-input-pace;
+            cursor: pointer;            
+            border-radius: 50%;
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                background-color: $topic-color;
+                cursor: pointer;            
+                border-radius: 50%;
+                top: 17px;
+                left: 17px;
+            }                                  
         } 
         &--check {
             & + label {                
-                background: url("pictures/check-box.png") no-repeat;                
+                border-radius: 5px;               
             }
             &:checked + label {                                   
-                background: url("pictures/tick.svg") no-repeat 17px, url("pictures/check-box.png") no-repeat;
+                border-radius: 5px;
+                &:before {                    
+                    width: 10px;
+                    height: 17px;
+                    background-color: $form-input-pace;                               
+                    border-bottom: 4px solid $topic-color;
+                    border-right: 4px solid $topic-color;
+                    top: 15px;
+                    left: 20px; 
+                    border-radius: 2px;
+                    transform: rotate(45deg);
+                }
             }                
         } 
     }

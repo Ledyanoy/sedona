@@ -502,6 +502,8 @@ table {
       font-size: 18px;
       font-weight: bold;
       text-transform: none; }
+      .form-card__text--radio-topic {
+        margin-left: 78px; }
     @media (min-width: 768px) {
       .form-card__text--invisible-tbl {
         display: none; } }
@@ -609,7 +611,7 @@ table {
     @media (min-width: 768px) {
       .form-card__check--bridge {
         order: -2;
-        width: 40%;
+        width: 50%;
         margin-bottom: 42px; } }
     @media (min-width: 1280px) {
       .form-card__check--bridge {
@@ -695,9 +697,9 @@ table {
       @media (min-width: 768px) {
         .form-card__item--error {
           order: -1;
-          width: 31%;
+          width: 200px;
           margin-top: 2px;
-          margin-right: -3px; } }
+          margin-right: -9px; } }
       @media (min-width: 1280px) {
         .form-card__item--error {
           order: -1;
@@ -736,17 +738,41 @@ table {
       display: block;
       width: 56px;
       height: 56px;
-      background: url("pictures/radio.png") no-repeat;
+      background-color: #f2f2f2;
       cursor: pointer;
-      padding-left: 78px; }
+      border-radius: 50%; }
     .form-card__radio:checked + label {
       display: block;
-      background: url("pictures/radio-checked.svg") no-repeat 17px, url("pictures/radio.png") no-repeat;
-      cursor: pointer; }
+      position: relative;
+      width: 56px;
+      height: 56px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+      border-radius: 50%; }
+      .form-card__radio:checked + label:before {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: #333333;
+        cursor: pointer;
+        border-radius: 50%;
+        top: 17px;
+        left: 17px; }
     .form-card__radio--check + label {
-      background: url("pictures/check-box.png") no-repeat; }
+      border-radius: 5px; }
     .form-card__radio--check:checked + label {
-      background: url("pictures/tick.svg") no-repeat 17px, url("pictures/check-box.png") no-repeat; }
+      border-radius: 5px; }
+      .form-card__radio--check:checked + label:before {
+        width: 10px;
+        height: 17px;
+        background-color: #f2f2f2;
+        border-bottom: 4px solid #333333;
+        border-right: 4px solid #333333;
+        top: 15px;
+        left: 20px;
+        border-radius: 2px;
+        transform: rotate(45deg); }
   @media (min-width: 768px) {
     .form-card--angle {
       width: 100%;
