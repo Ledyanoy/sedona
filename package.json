@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass styles/styles.scss styles.css -w -r styles",
     "server": "browser-sync start --server --files styles.css",
-    "dev": "concurrently --kill-others \"npm run scss\" \"npm run server\""
+    "dev": "concurrently --kill-others \"npm run scss\" \"npm run server\"",
+    "autoprefixer": "postcss -u autoprefixer -r styles.css*"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,10 @@
     "togglr": "^1.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.4",
     "browser-sync": "^2.18.13",
     "concurrently": "^3.5.1",
-    "node-sass": "^4.6.1"
+    "node-sass": "^4.6.1",
+    "postcss-cli": "^4.1.1"
   }
 }
