@@ -1,11 +1,12 @@
 .main-menu {    
-    &__list {
+    &__list {        
         display: flex;   
-        flex-direction: column;
+        flex-direction: column;        
     }                                           
-    &__item {
-        display: none;
-        background: $menu-color;
+    &__item {        
+        position: absolute;
+        top: -200px;        
+        background: $menu-color;        
         &:not(:last-child) {
             border-bottom: 1px solid $main-menu-border-color;          
         }  
@@ -79,17 +80,20 @@
             }   
         }
     } 
-    &--open {
+    &--open {        
         .main-menu {
-            &__item {
-                display: flex;                            
+            &__item {                
+                display: flex;  
+                position: relative;
+                top: 0px;
+                transition: 1s;                                                             
             }
             &__btn {
                 &--open {
-                    display: none;                
+                    display: none;                                   
                 }
                 &--close {
-                    display: block;
+                    display: block;                    
                 }
             }            
         }
@@ -99,12 +103,12 @@
     .main-menu {
         &__list {
             flex-direction: row;  
-            justify-content: space-between;            
+            justify-content: space-between;                         
         }                
         &__item {
             display: flex;                                        
             background: none;
-            width: 20%;            
+            width: 20%;                         
             &:not(:last-child) {
                 border-bottom: none;                         
             } 
