@@ -1,4 +1,4 @@
-.main-menu {    
+.main-menu {       
     &__list {        
         display: flex;   
         flex-direction: column;            
@@ -7,9 +7,8 @@
         display: flex;       
         position: absolute;
         top: -200px;  
-        width: 100%;  
-        transition: top 0.6s;                   
-        background: $menu-color;        
+        width: 100%;                                 
+        background: $menu-color;               
         &:not(:last-child) {
             border-bottom: 1px solid $main-menu-border-color;          
         }  
@@ -83,9 +82,9 @@
             }   
         }
     } 
-    &--open {        
+    &--open {                       
         .main-menu {
-            &__item {                  
+            &__item {                                  
                 position: relative;
                 top: 0px;
                 transition: top 0.6s;                                                             
@@ -98,8 +97,8 @@
                     display: block;                    
                 }
             }            
-        }
-    }         
+        }              
+    } 
 }
 @media (min-width: 768px) {
     .main-menu {

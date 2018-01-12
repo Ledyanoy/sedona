@@ -1,11 +1,13 @@
 .page-header {
-    position: relative;         
+    position: relative; 
+    min-height: 1px;  
+    max-height: 300px; /*Фикс бага при заезжании меню под фон при раскрытии, интервал min, max-height можно увеличить в зависимости от количества ячеек в меню*/              
     &__logo {                
         position: absolute;        
         left: 50%;
         margin-right: -50%;
         transform: translateX(-50%); 
-        z-index: 1;                                       
+        z-index: 1;                                             
     }    
 }
 
