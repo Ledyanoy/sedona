@@ -1,0 +1,44 @@
+.form-item {
+    color: $topic-color;
+    @media (min-width: 768px) {
+        order: -2;        
+        font-size: 14px;        
+    }
+    @media (min-width: 1280px) {
+        order: 0;                              
+    } 
+    &--error {
+        color: $form-error;
+        text-transform: none; 
+        margin-top: 13px;
+        margin-bottom: -3px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
+        @media (min-width: 768px) {
+            order: -1;
+            width: 200px;
+            margin-top: 2px;                       
+            margin-right: -9px;                                              
+        } 
+        @media (min-width: 1280px) {
+            order: -1;
+            width: 80%; 
+            margin-left: 26%;  /* подвинул вправо как в макете*/ 
+            margin-bottom: 5px;                                                 
+        } 
+    }
+    &--mail {
+        @media (min-width: 768px) {                
+            margin-top: 5px;
+            margin-bottom: 5px;                              
+        } 
+        @media (min-width: 1280px) {                
+            margin-right: 20px;
+            margin-top: 15px;                                              
+        }                 
+    }
+    &--phone {         
+        @media (min-width: 1280px) {                
+            margin-right: -35px;                                                 
+        } 
+    }           
+    
+}

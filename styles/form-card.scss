@@ -70,132 +70,16 @@
         }  
     }     
     &__text {               
-        width: 95%; 
-        text-align: center;
-        margin: 0 auto;       
-        &--caption {
-            color: $black-color;        
-            font-size: 18px;
-            font-weight: bold; 
-            margin-bottom: 25px; 
-            line-height: 1.5em;
-            @media (min-width: 768px) {
-                font-size: 21px;                
-                &-tablet {
-                    font-size: 30px;
-                    margin-bottom: 22px; 
-                }  
-            }
-        } 
-        &--topic {
-            color: $topic-color;        
-            font-size: 14px;
-            line-height: 1.8em; 
-            margin-bottom: 13px; 
-            @media (min-width: 768px) {
-                width: 60%;  
-            } 
-            @media (min-width: 1280px) {
-                width: 40%;
-                margin-bottom: 0px;                   
-            }                    
-        }
-        &--radio {
-            font-size:  18px;
-            font-weight: bold;
-            text-transform: none;
-            &-topic {
-                margin-left: 78px;
-            }                            
-        }
-        &--invisible-tbl {
-            @media (min-width: 768px) {
-                display: none;  
-            } 
-            @media (min-width: 1280px) {
-                display: inline;                    
-            }                     
-        }
-        &--visible-tbl {
-            display: none;
-            @media (min-width: 768px) { 
-                display: block;               
-            }               
-        }
-        &--tablet {
-            @media (min-width: 768px) {
-                margin-left: -45px; /* выровнял завголовок */ 
-                margin-bottom: 60px; 
-            }
-            @media (min-width: 1280px) {
-                margin-left: -55px; /* выровнял завголовок */ 
-                margin-bottom: 60px; 
-            }   
-        }
-        &--name-tbl {
-            @media (min-width: 768px) {
-                margin-left: -50px; /* выровнял завголовок */ 
-                margin-bottom: 60px;
-            }
-            @media (min-width: 1280px) {
-                width: 100%;
-                margin-left: -55px;                    
-            }   
-        }
-        &--visited-tbl {
-            @media (min-width: 768px) {
-                width: 50%;
-            } 
-            @media (min-width: 1280px) {
-                width: 40%;
-                line-height: 1.2em;
-            }  
-        }
-        &--invisible-desk {
-            @media (min-width: 1280px) {
-                display: none;
-            }
-        }
+        width: 95%;         
+        margin: 0 auto;        
     } 
     &__graphs {
         width: 92%; 
         margin: 0 auto;        
-        margin-top: -5px; 
+        margin-top: -5px;        
         @media (min-width: 768px) {
             width: 100%;  
-        }         
-        &--visited {
-            @media (min-width: 768px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                width: 70%;
-                margin-top: 45px;                
-            }
-            @media (min-width: 1280px) {
-                width: 100%; 
-                flex-wrap: nowrap; 
-                margin-top: 53px;                                             
-            }
-        }
-        &--btn {
-            @media (min-width: 768px) {
-                display: flex;                
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 25px;                             
-            }
-            @media (min-width: 1280px) {                
-                margin-bottom: 30px;                             
-            }
-        }
-        &--contact {
-            @media (min-width: 1280px) {
-                display: flex; 
-                margin-top: 42px;
-                justify-content: space-between;                                  
-            }
-        }
+        }        
     }
     &__graph {               
         display: flex; 
@@ -206,8 +90,7 @@
         &--contact {
             flex-wrap: wrap;
             @media (min-width: 1280px) {
-                width: 50%; 
-                
+                width: 50%;                
             }                                           
         } 
         &--left {
@@ -229,46 +112,11 @@
         }                           
     }
     &__check {
-        margin-top: -10px; /* поднял первую строу для pp */ 
-        line-height: 55px;
+        margin-top: -10px; /* поднял первую строу для pp */         
         margin-bottom: 34px;         
         &:last-child {
             margin-bottom: 9px;  /* убрал лишний отступ */ 
-        }         
-        &--bridge {
-            @media (min-width: 768px) {
-                order: -2; 
-                width: 50%;
-                margin-bottom: 42px;             
-            }
-            @media (min-width: 1280px) {             
-                width: 25%;  
-                margin-right: 60px;                       
-            }
-        }
-        &--rock {
-            @media (min-width: 768px) {
-                order: -1;
-                width: 43%;    
-            }
-            @media (min-width: 1280px) {             
-                width: 25%; 
-                margin-right: 55px;                        
-            }
-        } 
-        &--red {
-            @media (min-width: 768px) {                
-                width: 43%;    
-            }
-            @media (min-width: 1280px) {             
-                width: 25%;                         
-            }
-        }
-        &--park {            
-            @media (min-width: 1280px) {             
-                width: 30%;                         
-            }
-        }                                    
+        }                               
     }
     &__name {        
         color: $topic-color;
@@ -276,91 +124,20 @@
         @media (min-width: 768px) {
             font-size: 14px;
         }                       
-    }
-    &__input {
-        border: none;
-        color: $black-color;
-        background-color: $form-input-pace; 
-        font-size:  18px;
-        font-weight: bold;
-        padding: 18px;
-        width: 100%;         
-        &--contact {
-            margin-top: 10px;
-            width: 50%; 
-            flex-grow: 1;
-            @media (min-width: 1280px) {
-                width: 40%; 
-                flex-grow: 1;
-                
-            }
-        } 
-        &--story {                       
-            padding-top: 15px;
-            line-height: 1.4em;
-            word-spacing: -2px; /* сужаю расстояние между словами для pp*/
-            resize: none;            
-            margin-bottom: 27px;/*сдвигаю кнопку ниже*/
-            @media (min-width: 768px) {
-                margin-top: 35px;
-                margin-bottom: 35px;
-            }
-            @media (min-width: 1280px) {                
-                margin-bottom: 38px;
-            }
-        }        
-    }    
-    &__item {        
-        color: $topic-color;
+    }        
+    &__item {         
         margin-left: 20px;
         width: 100%;
         margin-top: 5px;
-        @media (min-width: 768px) {
-            order: -2;
+        @media (min-width: 768px) {            
             margin-top: 10px;
-            margin-left: 25px;
-            font-size: 14px;
+            margin-left: 25px;            
             width: 50%;
         } 
-        @media (min-width: 1280px) {
-            order: 0; 
+        @media (min-width: 1280px) {            
             width: 30%;
-            margin-left: 0px;
-                       
-        } 
-        &--error {
-            color: $form-error;
-            text-transform: none; 
-            margin-top: 7px;
-            margin-bottom: -5px; /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/
-            @media (min-width: 768px) {
-                order: -1;
-                width: 200px;
-                margin-top: 2px;                       
-                margin-right: -9px;                                              
-            } 
-            @media (min-width: 1280px) {
-                order: -1;
-                width: 80%; 
-                margin-left: 26%;  /* подвинул вправо как в макете*/ 
-                margin-bottom: 5px;                                                 
-            } 
-        }
-        &--mail {
-            @media (min-width: 768px) {                
-                margin-top: 5px;
-                margin-bottom: 5px;                              
-            } 
-            @media (min-width: 1280px) {                
-                margin-right: 20px;
-                margin-top: 15px;                                              
-            }                 
-        }
-        &--phone {         
-            @media (min-width: 1280px) {                
-                margin-right: -35px;                                                 
-            } 
-        }                              
+            margin-left: 0px;                       
+        }                            
     } 
     &__icons {        
         display: block;
@@ -377,58 +154,7 @@
         &:hover {
             filter: blur(1px);
         }                                    
-    }
-    &__radio {
-        display: none; /*убираю стандратные и ниже меняю стиль радиобоксов */ 
-        & + label {
-            display: block;
-            width: 56px;
-            height: 56px; 
-            background-color: $form-input-pace;
-            cursor: pointer;            
-            border-radius: 50%;
-                                   
-        }
-        &:checked + label {
-            display: block;
-            position: relative;
-            width: 56px;
-            height: 56px; 
-            background-color: $form-input-pace;
-            cursor: pointer;            
-            border-radius: 50%;
-            &:before {
-                content: "";                
-                position: absolute;
-                width: 22px;
-                height: 22px;
-                background-color: $topic-color;
-                cursor: pointer;            
-                border-radius: 50%;
-                top: 17px;
-                left: 17px;
-            }                                  
-        } 
-        &--check {
-            & + label {                
-                border-radius: 5px;               
-            }
-            &:checked + label {                                   
-                border-radius: 5px;
-                &:before {                    
-                    width: 10px;
-                    height: 17px;
-                    background-color: $form-input-pace;                               
-                    border-bottom: 4px solid $topic-color;
-                    border-right: 4px solid $topic-color;
-                    top: 15px;
-                    left: 20px; 
-                    border-radius: 2px;
-                    transform: rotate(45deg);
-                }
-            }                
-        } 
-    }
+    }    
     &--angle {        
         @media (min-width: 768px) {
             width: 100%;

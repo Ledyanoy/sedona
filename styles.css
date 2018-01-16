@@ -41,8 +41,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "PT Sans";
+  src: url(font/PTSans-Regular.woff2); }
+
 .page {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Georgia;
   text-transform: uppercase; }
   @media (min-width: 1280px) {
     .page {
@@ -59,9 +63,7 @@ table {
 
 .page-header {
   position: relative;
-  min-height: 1px;
-  max-height: 300px;
-  /*Фикс бага при заезжании меню под фон при раскрытии, интервал min, max-height можно увеличить в зависимости от количества ячеек в меню*/ }
+  min-height: 1px; }
   .page-header__logo {
     position: absolute;
     left: 50%;
@@ -288,9 +290,12 @@ table {
       margin-bottom: 30px; } }
 
 .section__text {
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .section__text {
+      width: 80%; } }
   .section__text--caption {
     color: #000000;
     font-size: 18px;
@@ -330,13 +335,13 @@ table {
     font-size: 21px;
     margin-top: 5px;
     line-height: 1.2em;
-    width: 59.6%; }
+    width: 61%; }
   .section__text--caption-white-angle {
     font-size: 21px;
     margin-top: 5px;
     line-height: 1.2em; }
   .section__text--topic-white {
-    width: 70%; }
+    width: 65%; }
   .section__number {
     margin-top: 12px;
     margin-bottom: 20px; } }
@@ -481,78 +486,7 @@ table {
         background: url("pictures/line-desk.png") no-repeat 0% 7%; } }
   .form-card__text {
     width: 95%;
-    text-align: center;
     margin: 0 auto; }
-    .form-card__text--caption {
-      color: #000000;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 25px;
-      line-height: 1.5em; }
-      @media (min-width: 768px) {
-        .form-card__text--caption {
-          font-size: 21px; }
-          .form-card__text--caption-tablet {
-            font-size: 30px;
-            margin-bottom: 22px; } }
-    .form-card__text--topic {
-      color: #333333;
-      font-size: 14px;
-      line-height: 1.8em;
-      margin-bottom: 13px; }
-      @media (min-width: 768px) {
-        .form-card__text--topic {
-          width: 60%; } }
-      @media (min-width: 1280px) {
-        .form-card__text--topic {
-          width: 40%;
-          margin-bottom: 0px; } }
-    .form-card__text--radio {
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: none; }
-      .form-card__text--radio-topic {
-        margin-left: 78px; }
-    @media (min-width: 768px) {
-      .form-card__text--invisible-tbl {
-        display: none; } }
-    @media (min-width: 1280px) {
-      .form-card__text--invisible-tbl {
-        display: inline; } }
-    .form-card__text--visible-tbl {
-      display: none; }
-      @media (min-width: 768px) {
-        .form-card__text--visible-tbl {
-          display: block; } }
-    @media (min-width: 768px) {
-      .form-card__text--tablet {
-        margin-left: -45px;
-        /* выровнял завголовок */
-        margin-bottom: 60px; } }
-    @media (min-width: 1280px) {
-      .form-card__text--tablet {
-        margin-left: -55px;
-        /* выровнял завголовок */
-        margin-bottom: 60px; } }
-    @media (min-width: 768px) {
-      .form-card__text--name-tbl {
-        margin-left: -50px;
-        /* выровнял завголовок */
-        margin-bottom: 60px; } }
-    @media (min-width: 1280px) {
-      .form-card__text--name-tbl {
-        width: 100%;
-        margin-left: -55px; } }
-    @media (min-width: 768px) {
-      .form-card__text--visited-tbl {
-        width: 50%; } }
-    @media (min-width: 1280px) {
-      .form-card__text--visited-tbl {
-        width: 40%;
-        line-height: 1.2em; } }
-    @media (min-width: 1280px) {
-      .form-card__text--invisible-desk {
-        display: none; } }
   .form-card__graphs {
     width: 92%;
     margin: 0 auto;
@@ -560,32 +494,6 @@ table {
     @media (min-width: 768px) {
       .form-card__graphs {
         width: 100%; } }
-    @media (min-width: 768px) {
-      .form-card__graphs--visited {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 70%;
-        margin-top: 45px; } }
-    @media (min-width: 1280px) {
-      .form-card__graphs--visited {
-        width: 100%;
-        flex-wrap: nowrap;
-        margin-top: 53px; } }
-    @media (min-width: 768px) {
-      .form-card__graphs--btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 25px; } }
-    @media (min-width: 1280px) {
-      .form-card__graphs--btn {
-        margin-bottom: 30px; } }
-    @media (min-width: 1280px) {
-      .form-card__graphs--contact {
-        display: flex;
-        margin-top: 42px;
-        justify-content: space-between; } }
   .form-card__graph {
     display: flex;
     align-items: center;
@@ -612,121 +520,29 @@ table {
   .form-card__check {
     margin-top: -10px;
     /* поднял первую строу для pp */
-    line-height: 55px;
     margin-bottom: 34px; }
     .form-card__check:last-child {
       margin-bottom: 9px;
       /* убрал лишний отступ */ }
-    @media (min-width: 768px) {
-      .form-card__check--bridge {
-        order: -2;
-        width: 50%;
-        margin-bottom: 42px; } }
-    @media (min-width: 1280px) {
-      .form-card__check--bridge {
-        width: 25%;
-        margin-right: 60px; } }
-    @media (min-width: 768px) {
-      .form-card__check--rock {
-        order: -1;
-        width: 43%; } }
-    @media (min-width: 1280px) {
-      .form-card__check--rock {
-        width: 25%;
-        margin-right: 55px; } }
-    @media (min-width: 768px) {
-      .form-card__check--red {
-        width: 43%; } }
-    @media (min-width: 1280px) {
-      .form-card__check--red {
-        width: 25%; } }
-    @media (min-width: 1280px) {
-      .form-card__check--park {
-        width: 30%; } }
   .form-card__name {
     color: #333333;
     margin-right: 15px; }
     @media (min-width: 768px) {
       .form-card__name {
         font-size: 14px; } }
-  .form-card__input {
-    border: none;
-    color: #000000;
-    background-color: #f2f2f2;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 18px;
-    width: 100%; }
-    .form-card__input--contact {
-      margin-top: 10px;
-      width: 50%;
-      flex-grow: 1; }
-      @media (min-width: 1280px) {
-        .form-card__input--contact {
-          width: 40%;
-          flex-grow: 1; } }
-    .form-card__input--story {
-      padding-top: 15px;
-      line-height: 1.4em;
-      word-spacing: -2px;
-      /* сужаю расстояние между словами для pp*/
-      resize: none;
-      margin-bottom: 27px;
-      /*сдвигаю кнопку ниже*/ }
-      @media (min-width: 768px) {
-        .form-card__input--story {
-          margin-top: 35px;
-          margin-bottom: 35px; } }
-      @media (min-width: 1280px) {
-        .form-card__input--story {
-          margin-bottom: 38px; } }
   .form-card__item {
-    color: #333333;
     margin-left: 20px;
     width: 100%;
     margin-top: 5px; }
     @media (min-width: 768px) {
       .form-card__item {
-        order: -2;
         margin-top: 10px;
         margin-left: 25px;
-        font-size: 14px;
         width: 50%; } }
     @media (min-width: 1280px) {
       .form-card__item {
-        order: 0;
         width: 30%;
         margin-left: 0px; } }
-    .form-card__item--error {
-      color: #ff5c5c;
-      text-transform: none;
-      margin-top: 7px;
-      margin-bottom: -5px;
-      /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/ }
-      @media (min-width: 768px) {
-        .form-card__item--error {
-          order: -1;
-          width: 200px;
-          margin-top: 2px;
-          margin-right: -9px; } }
-      @media (min-width: 1280px) {
-        .form-card__item--error {
-          order: -1;
-          width: 80%;
-          margin-left: 26%;
-          /* подвинул вправо как в макете*/
-          margin-bottom: 5px; } }
-    @media (min-width: 768px) {
-      .form-card__item--mail {
-        margin-top: 5px;
-        margin-bottom: 5px; } }
-    @media (min-width: 1280px) {
-      .form-card__item--mail {
-        margin-right: 20px;
-        margin-top: 15px; } }
-    @media (min-width: 1280px) {
-      .form-card__item--phone {
-        margin-right: -35px; } }
   .form-card__icons {
     display: block;
     width: 58px;
@@ -740,48 +556,6 @@ table {
       background-image: url("pictures/mail.svg"); }
     .form-card__icons:hover {
       filter: blur(1px); }
-  .form-card__radio {
-    display: none;
-    /*убираю стандратные и ниже меняю стиль радиобоксов */ }
-    .form-card__radio + label {
-      display: block;
-      width: 56px;
-      height: 56px;
-      background-color: #f2f2f2;
-      cursor: pointer;
-      border-radius: 50%; }
-    .form-card__radio:checked + label {
-      display: block;
-      position: relative;
-      width: 56px;
-      height: 56px;
-      background-color: #f2f2f2;
-      cursor: pointer;
-      border-radius: 50%; }
-      .form-card__radio:checked + label:before {
-        content: "";
-        position: absolute;
-        width: 22px;
-        height: 22px;
-        background-color: #333333;
-        cursor: pointer;
-        border-radius: 50%;
-        top: 17px;
-        left: 17px; }
-    .form-card__radio--check + label {
-      border-radius: 5px; }
-    .form-card__radio--check:checked + label {
-      border-radius: 5px; }
-      .form-card__radio--check:checked + label:before {
-        width: 10px;
-        height: 17px;
-        background-color: #f2f2f2;
-        border-bottom: 4px solid #333333;
-        border-right: 4px solid #333333;
-        top: 15px;
-        left: 20px;
-        border-radius: 2px;
-        transform: rotate(45deg); }
   @media (min-width: 768px) {
     .form-card--angle {
       width: 100%;
@@ -824,6 +598,271 @@ table {
   @media (min-width: 1280px) {
     .form-card__outer {
       width: 80%; } }
+
+.form-text {
+  text-align: center; }
+  .form-text--caption {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5em; }
+    @media (min-width: 768px) {
+      .form-text--caption {
+        font-size: 21px; }
+        .form-text--caption-tablet {
+          font-size: 30px;
+          margin-bottom: 22px; } }
+  .form-text--topic {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin-bottom: 13px; }
+    @media (min-width: 768px) {
+      .form-text--topic {
+        width: 60%; } }
+    @media (min-width: 1280px) {
+      .form-text--topic {
+        width: 40%;
+        margin-bottom: 0px; } }
+  .form-text--radio {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none; }
+    .form-text--radio-topic {
+      margin-left: 78px; }
+  @media (min-width: 768px) {
+    .form-text--invisible-tbl {
+      display: none; } }
+  @media (min-width: 1280px) {
+    .form-text--invisible-tbl {
+      display: inline; } }
+  .form-text--visible-tbl {
+    display: none; }
+    @media (min-width: 768px) {
+      .form-text--visible-tbl {
+        display: block; } }
+  @media (min-width: 768px) {
+    .form-text--tablet {
+      margin-left: -45px;
+      /* выровнял завголовок */
+      margin-bottom: 60px; } }
+  @media (min-width: 1280px) {
+    .form-text--tablet {
+      margin-left: -55px;
+      /* выровнял завголовок */
+      margin-bottom: 60px; } }
+  @media (min-width: 768px) {
+    .form-text--name-tbl {
+      margin-left: -50px;
+      /* выровнял завголовок */
+      margin-bottom: 60px; } }
+  @media (min-width: 1280px) {
+    .form-text--name-tbl {
+      width: 100%;
+      margin-left: -55px; } }
+  @media (min-width: 768px) {
+    .form-text--visited-tbl {
+      width: 50%; } }
+  @media (min-width: 1280px) {
+    .form-text--visited-tbl {
+      width: 40%;
+      line-height: 1.2em; } }
+  @media (min-width: 1280px) {
+    .form-text--invisible-desk {
+      display: none; } }
+
+@media (min-width: 768px) {
+  .graphs {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .graphs--visited {
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 45px; } }
+
+@media (min-width: 1280px) {
+  .graphs--visited {
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 53px; } }
+
+@media (min-width: 768px) {
+  .graphs--btn {
+    align-items: center;
+    margin-bottom: 25px; } }
+
+@media (min-width: 1280px) {
+  .graphs--btn {
+    margin-bottom: 30px; } }
+
+@media (min-width: 768px) {
+  .graphs--contact {
+    display: block; } }
+
+@media (min-width: 1280px) {
+  .graphs--contact {
+    display: flex;
+    margin-top: 42px;
+    justify-content: space-between; } }
+
+.form-input {
+  border: none;
+  color: #000000;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 18px;
+  width: 100%; }
+  .form-input:hover {
+    background-color: #e5e5e5; }
+  .form-input:active {
+    background-color: #ffffff; }
+  .form-input--contact {
+    margin-top: 10px;
+    width: 50%;
+    flex-grow: 1; }
+    @media (min-width: 1280px) {
+      .form-input--contact {
+        width: 40%;
+        flex-grow: 1; } }
+  .form-input--story {
+    padding-top: 15px;
+    line-height: 1.4em;
+    word-spacing: -2px;
+    /* сужаю расстояние между словами для pp*/
+    resize: none;
+    margin-bottom: 27px;
+    /*сдвигаю кнопку ниже*/ }
+    @media (min-width: 768px) {
+      .form-input--story {
+        margin-top: 35px;
+        margin-bottom: 35px; } }
+    @media (min-width: 1280px) {
+      .form-input--story {
+        margin-bottom: 38px; } }
+
+.form-radio {
+  display: none;
+  /*убираю стандратные и ниже меняю стиль радиобоксов */ }
+  .form-radio + label {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 50%; }
+    .form-radio + label:hover {
+      background-color: #e5e5e5; }
+    .form-radio + label:active {
+      background-color: #d5d5d5; }
+  .form-radio:checked + label {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 50%; }
+    .form-radio:checked + label:hover {
+      background-color: #e5e5e5; }
+    .form-radio:checked + label:active {
+      background-color: #d5d5d5; }
+    .form-radio:checked + label:before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background-color: #333333;
+      cursor: pointer;
+      border-radius: 50%;
+      top: 17px;
+      left: 17px; }
+  .form-radio--check + label {
+    border-radius: 5px; }
+  .form-radio--check:checked + label {
+    border-radius: 5px; }
+    .form-radio--check:checked + label:before {
+      width: 10px;
+      height: 17px;
+      background-color: transparent;
+      border-bottom: 4px solid #333333;
+      border-right: 4px solid #333333;
+      top: 15px;
+      left: 20px;
+      border-radius: 2px;
+      transform: rotate(45deg); }
+
+.form-check {
+  line-height: 55px; }
+  @media (min-width: 768px) {
+    .form-check--bridge {
+      order: -2;
+      width: 50%;
+      margin-bottom: 42px; } }
+  @media (min-width: 1280px) {
+    .form-check--bridge {
+      width: 25%;
+      margin-right: 60px; } }
+  @media (min-width: 768px) {
+    .form-check--rock {
+      order: -1;
+      width: 43%; } }
+  @media (min-width: 1280px) {
+    .form-check--rock {
+      width: 25%;
+      margin-right: 55px; } }
+  @media (min-width: 768px) {
+    .form-check--red {
+      width: 43%; } }
+  @media (min-width: 1280px) {
+    .form-check--red {
+      width: 25%; } }
+  @media (min-width: 1280px) {
+    .form-check--park {
+      width: 30%; } }
+
+.form-item {
+  color: #333333; }
+  @media (min-width: 768px) {
+    .form-item {
+      order: -2;
+      font-size: 14px; } }
+  @media (min-width: 1280px) {
+    .form-item {
+      order: 0; } }
+  .form-item--error {
+    color: #ff5c5c;
+    text-transform: none;
+    margin-top: 13px;
+    margin-bottom: -3px;
+    /* уменьшил дефолтный марджин для того чтобы нижняя графа с мылом поднялась*/ }
+    @media (min-width: 768px) {
+      .form-item--error {
+        order: -1;
+        width: 200px;
+        margin-top: 2px;
+        margin-right: -9px; } }
+    @media (min-width: 1280px) {
+      .form-item--error {
+        order: -1;
+        width: 80%;
+        margin-left: 26%;
+        /* подвинул вправо как в макете*/
+        margin-bottom: 5px; } }
+  @media (min-width: 768px) {
+    .form-item--mail {
+      margin-top: 5px;
+      margin-bottom: 5px; } }
+  @media (min-width: 1280px) {
+    .form-item--mail {
+      margin-right: 20px;
+      margin-top: 15px; } }
+  @media (min-width: 1280px) {
+    .form-item--phone {
+      margin-right: -35px; } }
 
 .description__cards {
   width: 70%;
@@ -924,7 +963,7 @@ table {
     width: 70%;
     margin: 0 auto; }
     .cards__topic--food {
-      width: 60%; } }
+      width: 61%; } }
 
 @media (min-width: 1280px) {
   .cards__topic--food {
@@ -1006,7 +1045,7 @@ table {
   padding-top: 30px;
   padding-bottom: 32px; }
   .order-card__text {
-    width: 85%;
+    width: 90%;
     text-align: center;
     margin: 0 auto; }
     .order-card__text--caption {
@@ -1039,42 +1078,40 @@ table {
 .order__btn {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 45px; }
+  margin-right: auto; }
+  .order__btn--main {
+    width: 90%;
+    height: 55px;
+    margin-bottom: 45px; }
+    @media (min-width: 768px) {
+      .order__btn--main {
+        width: 61%;
+        height: 60px;
+        margin-bottom: 55px; } }
+    @media (min-width: 1280px) {
+      .order__btn--main {
+        width: 38%;
+        margin-bottom: 62px; } }
+  .order__btn--form {
+    width: 98%;
+    height: 60px; }
+    @media (min-width: 768px) {
+      .order__btn--form {
+        width: 50%;
+        margin-left: 0; } }
 
-@media (min-width: 768px) {
-  .order__btn {
-    width: 60%;
-    margin-bottom: 55px; } }
-
-@media (min-width: 1280px) {
-  .order__btn {
-    margin-bottom: 62px; } }
-
-.search-button {
-  height: 60px;
-  width: 87.5%;
-  text-align: center;
+.btn {
+  width: 100%;
+  height: 100%;
   background-color: #81b3d2;
   border: none;
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
   cursor: pointer; }
-  @media (min-width: 768px) {
-    .search-button {
-      width: 60%; } }
-  @media (min-width: 1280px) {
-    .search-button {
-      width: 38%; } }
-  .search-button--feedback {
-    width: 100%; }
-    @media (min-width: 768px) {
-      .search-button--feedback {
-        width: 50%; } }
-  .search-button:hover {
+  .btn:hover {
     filter: blur(1px); }
-  .search-button:active {
+  .btn:active {
     background-color: #ffffff;
     color: #81b3d2; }
 
@@ -1093,6 +1130,12 @@ table {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between; }
+  .footer-page__icon {
+    fill: #000000; }
+    .footer-page__icon:hover {
+      fill: #81b3d2; }
+    .footer-page__icon:active {
+      fill: #d5d5d5; }
   .footer-page__icons {
     background-color: #81b3d2;
     padding: 17px 14px; }

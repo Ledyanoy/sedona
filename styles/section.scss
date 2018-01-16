@@ -1,14 +1,17 @@
 .section {
     &__text {               
-        width: 80%; 
+        width: 90%; 
         text-align: center;
-        margin: 0 auto; 
+        margin: 0 auto;
+        @media (min-width: 768px) {
+            width: 80%;
+        } 
         &--caption {
             color: $black-color;        
             font-size: 18px;
             font-weight: bold; 
             margin-bottom: 25px; 
-            line-height: 1.5em;          
+            line-height: 1.5em;                     
         }
         &--caption-white {
             position: relative;            
@@ -52,7 +55,7 @@
                 font-size: 21px;
                 margin-top: 5px;
                 line-height: 1.2em; 
-                width: 59.6%;
+                width: 61%;
                                                           
             } 
             &--caption-white-angle {                         
@@ -61,7 +64,7 @@
                 line-height: 1.2em; 
             }
             &--topic-white {                
-                width: 70%;                                   
+                width: 65%;                                   
             }          
         }
         &__number {            

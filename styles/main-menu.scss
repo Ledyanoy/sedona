@@ -17,7 +17,7 @@
         }
         &:last-child {
             box-shadow: inset 0px -2px 5px 0px $main-menu-bordershadow-color;
-        }                                 
+        }                                         
     }          
     &__link {         
         text-transform: uppercase;
@@ -35,7 +35,7 @@
         &:active {            
             background: $menu-text-color; 
             color: $menu-color;                     
-        }
+        }       
     }
     &__btn {
         content: "";
@@ -82,7 +82,7 @@
             }   
         }
     } 
-    &--open {                       
+    &--open {                              
         .main-menu {
             &__item {                                  
                 position: relative;

@@ -15,6 +15,15 @@
         display: flex; 
         justify-content: space-between;
     }
+    &__icon { 
+        fill:$black-color;       
+        &:hover {
+        fill: $menu-color;        
+        }  
+        &:active {
+            fill: $form-input-space-act;        
+        }              
+    }
     &__icons {             
         background-color: $menu-color;         
         padding: 17px 14px;
