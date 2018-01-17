@@ -1,8 +1,9 @@
-.intro {         
+.intro { 
+    margin-top: 55px;      
+    position: relative;                
     &__image {         
         position: relative;       
-        display: block;         
-        margin-top: 55px;
+        display: block;       
         padding-top: 90px;
         padding-bottom: 135px;
         margin-bottom: -40px;      
@@ -46,17 +47,15 @@
         &--tablet  {
             margin-top: -10px;
         }            
-    }    
-    
+    }   
 }
-
 @media (min-width: 768px) {
     .intro {
-        &__image {                  
-            margin-top: 0px;              
+        margin-top: 0px;
+        &__image {                         
             background-image: url(pictures/back-tablet.jpg);  
             background-size: 101%; 
-            padding-bottom: 140px;                       
+            padding-bottom: 140px;                                 
             &:before {                
                 height: 6.6em;
                 left: 4.4%; 
@@ -81,8 +80,7 @@
     .intro {
         &__image {             
             background-image: url(pictures/back-desktop.jpg); 
-            background-size: inherit;             
-            padding-bottom: 140px;            
+            background-size: inherit;                         
             &:before {                
                 height: 6.6em;
                 left: 250px;

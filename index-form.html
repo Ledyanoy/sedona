@@ -13,7 +13,7 @@
             <ul class="main-menu__list">
               <li class="main-menu__item"><a href="index.html" class="main-menu__link">Главная</a></li>
               <li class="main-menu__item"><a href="" class="main-menu__link">Фото и видео</a></li> 
-              <li class="main-menu__item"><a href="" class="main-menu__link">Форма отзыва</a></li> 
+              <li class="main-menu__item"><a href="" class="main-menu__link active">Форма отзыва</a></li> 
               <li class="main-menu__item"><a href="" class="main-menu__link">HTML Academy</a></li>                  
             </ul> 
             <button class="main-menu__btn main-menu__btn--close toggle-button" data-togglr-target=".main-menu" data-togglr-remove="main-menu--open">
@@ -54,15 +54,15 @@
               <ul class="form-card__graphs">
                 <li class="form-card__graph">
                   <label for="name" class="form-card__name">Имя:</label>                
-                  <input type="text" id="name" class="form-input">                              
+                  <input type="text" id="name" placeholder="Петр" class="form-input">                              
                 </li>
                 <li class="form-card__graph">
                   <label for="surname" class="form-card__name">Фамилия:</label>                
-                  <input type="text" id="surname" class="form-input">                              
+                  <input type="text" id="surname" placeholder="Иванов" class="form-input">                              
                 </li> 
                 <li class="form-card__graph">
                   <label for="patronymic" class="form-card__name">Отчество:</label>                
-                  <input type="text" id="patronymic" class="form-input">                              
+                  <input type="text" id="patronymic" placeholder="Александрович" class="form-input">                              
                 </li> 
             </ul>            
             </section> 
@@ -92,16 +92,16 @@
               </h3>
               <ul class="form-card__graphs">
                 <li class="form-card__radiobtn">
-                    <input type="radio" checked name="impression" id="positive" class="form-radio">
-                    <label for="positive" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Скорее&nbsp;положительное</span></label>                   
+                    <input type="radio" checked name="impression" id="positive" class="form-radio visually-hidden">
+                    <label for="positive" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Скорее&nbsp;положительное</span></label>                   
                 </li>
                 <li class="form-card__radiobtn">
-                    <input type="radio" name="impression" id="negative" class="form-radio">
-                    <label for="negative" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Скорее&nbsp;отрицательное</span></label>                   
+                    <input type="radio" name="impression" id="negative" class="form-radio visually-hidden">
+                    <label for="negative" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Скорее&nbsp;отрицательное</span></label>                   
                 </li>
                 <li class="form-card__radiobtn">
-                    <input type="radio" name="impression" id="trouble" class="form-radio">
-                    <label for="trouble" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Затрудняюсь&nbsp;ответить</span></label>                   
+                    <input type="radio" name="impression" id="trouble" class="form-radio visually-hidden">
+                    <label for="trouble" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Затрудняюсь&nbsp;ответить</span></label>                   
                 </li>
               </ul>
             </section> 
@@ -110,20 +110,20 @@
               </h3>
               <ul class="form-card__graphs graphs graphs--visited">
                 <li class="form-card__check form-check form-check--bridge">
-                    <input type="checkbox" checked id="bridge" class="form-radio form-radio--check">
-                    <label for="bridge" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Мост&nbsp;Дьявола</span></label>                   
+                    <input type="checkbox" checked id="bridge" class="form-radio form-radio--check visually-hidden">
+                    <label for="bridge" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Мост&nbsp;Дьявола</span></label>                   
                 </li>
                 <li class="form-card__check form-check form-check--park">
-                    <input type="checkbox" checked id="park" class="form-radio form-radio--check">
-                    <label for="park" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Слайд&#8209;парк</span></label>                   
+                    <input type="checkbox" checked id="park" class="form-radio form-radio--check visually-hidden">
+                    <label for="park" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Слайд&#8209;парк</span></label>                   
                 </li>
                 <li class="form-card__check form-check form-check--rock">
-                    <input type="checkbox" id="rock" class="form-radio form-radio--check">
-                    <label for="rock" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Гора&#8209;Колокол</span></label>                   
+                    <input type="checkbox" id="rock" class="form-radio form-radio--check visually-hidden">
+                    <label for="rock" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Гора&#8209;Колокол</span></label>                   
                 </li>
                 <li class="form-card__check form-check form-check--red">
-                    <input type="checkbox" checked id="red" class="form-radio form-radio--check">
-                    <label for="red" class="form-text form-text--radio"><span class="form-text form-text--radio-topic">Красные&nbsp;скалы</span></label>                   
+                    <input type="checkbox" checked id="red" class="form-radio form-radio--check visually-hidden">
+                    <label for="red" class="form-text form-text--radio" tabindex="0"><span class="form-text form-text--radio-topic">Красные&nbsp;скалы</span></label>                   
                 </li>
               </ul>
             </section> 

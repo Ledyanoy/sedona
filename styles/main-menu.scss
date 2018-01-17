@@ -1,14 +1,13 @@
-.main-menu {       
+.main-menu {          
     &__list {        
         display: flex;   
-        flex-direction: column;            
+        flex-direction: column;
+        top: -300px; 
+        position: absolute;
+        width: 100%;           
     }                                           
     &__item { 
-        display: flex;       
-        position: absolute;
-        top: -200px;  
-        width: 100%;                                 
-        background: $menu-color;               
+        display: flex;                                      
         &:not(:last-child) {
             border-bottom: 1px solid $main-menu-border-color;          
         }  
@@ -17,12 +16,19 @@
         }
         &:last-child {
             box-shadow: inset 0px -2px 5px 0px $main-menu-bordershadow-color;
-        }                                         
-    }          
+        } 
+        & .active {            
+            background-color: $form-input-space-hvr;
+            filter: none;
+            cursor: default;
+            pointer-events: none;
+        }                                                               
+    }        
     &__link {         
         text-transform: uppercase;
         text-decoration: none;
         color: $menu-text-color;
+        background: $menu-color;
         font-weight: bold;
         font-size: 18px; 
         width: 100%;  
@@ -35,8 +41,8 @@
         &:active {            
             background: $menu-text-color; 
             color: $menu-color;                     
-        }       
-    }
+        }                          
+    }       
     &__btn {
         content: "";
         position: absolute;       
@@ -82,12 +88,12 @@
             }   
         }
     } 
-    &--open {                              
-        .main-menu {
-            &__item {                                  
+    &--open {                                      
+        .main-menu {            
+            &__list {                                  
                 position: relative;
                 top: 0px;
-                transition: top 0.6s;                                                             
+                transition: top 1s;                                                             
             }
             &__btn {                
                 &--open {
@@ -97,20 +103,20 @@
                     display: block;                    
                 }
             }            
-        }              
-    } 
+        }                            
+    }    
 }
 @media (min-width: 768px) {
     .main-menu {
         &__list {
             flex-direction: row;  
-            justify-content: space-between;                         
+            justify-content: space-between;
+            position: relative;
+            top: 0px;                         
         }                
         &__item {
-            position: relative;            
-            top: 0px;                                                  
-            background: none;
-            width: 20%;                         
+            position: relative;                            
+            width: 20%;                                    
             &:not(:last-child) {
                 border-bottom: none;                         
             } 
@@ -122,18 +128,39 @@
             }
             &:nth-child(2) {
                 margin-right: 20%;
+            }            
+            & .active { 
+                color: $mm-active;           
+                background-color: $menu-text-color;
+                pointer-events: auto;
+                cursor: pointer;
+                filter: none;                                
+                &:hover {
+                    color: $mm-active-hvr;                   
+                }
+                &:active {
+                    color: $mm-active-dwn;                    
+                }
             }                                               
         }
         &__link {         
             text-transform: uppercase;
             text-decoration: none;
             color: $black-color;
+            background-color: $menu-text-color;
             font-weight: bold;
             font-size: 14px; 
             width: 100%;  
             text-align: center;
             padding: 20px 0px;
-            white-space: nowrap; 
+            white-space: nowrap;                        
+            &:hover {                                
+                color: $menu-color;
+                filter: none;
+            }
+            &:active {                               
+                color: $mm-dwn;
+            }  
         } 
     }
 }

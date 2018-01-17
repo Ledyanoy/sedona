@@ -1,6 +1,6 @@
 .page-header {
-    position: relative; 
-    min-height: 1px;                
+    position: relative;
+    min-height: 1px;                     
     &__logo {                
         position: absolute;        
         left: 50%;
@@ -9,7 +9,6 @@
         z-index: 1;                                             
     }    
 }
-
 @media (min-width: 768px) {    
     .page-header__logo {
         top: 0;              

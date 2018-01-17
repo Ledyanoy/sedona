@@ -1,12 +1,11 @@
-.form-radio {
-    display: none; /*убираю стандратные и ниже меняю стиль радиобоксов */ 
+.form-radio {          
     & + label {
         display: block;
         width: 56px;
         height: 56px; 
         background-color: $form-input-space;
         cursor: pointer;            
-        border-radius: 50%;
+        border-radius: 50%;         
         &:hover {
             background-color: $form-input-space-hvr;
         }
@@ -39,7 +38,7 @@
             top: 17px;
             left: 17px;                
         }                                             
-    } 
+    }     
     &--check {
         & + label {                
             border-radius: 5px;               

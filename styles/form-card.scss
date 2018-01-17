@@ -21,14 +21,37 @@
     &--contact {
         padding-top: 17px;
         padding-bottom: 6px;
-        @media (min-width: 768px) {            
-            background: url("pictures/line.png") no-repeat 0% 11%,
-                        url("pictures/line.png") no-repeat 100% 11%; 
-            width: 100%;                    
+        @media (min-width: 768px) {                                     
+            width: 100%;
+            position: relative;
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 11%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 11%;
+            }                               
         }
-        @media (min-width: 1280px) {  
-            background: url("pictures/line-desk.png") no-repeat 0% 16%;                                 
-                               
+        @media (min-width: 1280px) { 
+            &:before {                
+                width: 29%;                                
+                top: 15%;
+            } 
+            &:after {                
+                width: 29%;                
+                top: 15%;
+                left: 71%;
+            }                              
         }
     } 
     &--impression {
@@ -36,8 +59,17 @@
         padding-bottom: 17px;
         @media (min-width: 768px) {
             order: -1; 
-            width: 59%; 
-            background: url("pictures/vertical-line.png") no-repeat 85% 35%;                     
+            width: 59%;             
+            position: relative;
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 1px;
+                height: 290px;
+                background-color: $body-shadow;
+                left: 85%;
+                top: 7%;
+            }                    
         } 
         @media (min-width: 1280px) {
             padding-top: 15px;                                
@@ -49,12 +81,36 @@
         @media (min-width: 768px) {             
             width: 100%; 
             padding-top: 25px;
-            background: url("pictures/line.png") no-repeat 0% 17%,
-                        url("pictures/line.png") no-repeat 100% 17%;                                
+            position: relative; 
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 17%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 17%;
+            }                                            
         } 
         @media (min-width: 1280px) {
             padding-bottom: 5px;
-            background: url("pictures/line-desk.png") no-repeat 0% 23%;                                          
+            &:before {                
+                width: 29%;                                
+                top: 21%;
+            } 
+            &:after {                
+                width: 29%;                
+                top: 21%;
+                left: 71%;
+            }                                                       
         }          
     }   
     &--feedback {
@@ -62,11 +118,33 @@
         padding-bottom: 35px;
         @media (min-width: 768px) {             
             width: 100%;
-            background: url("pictures/line.png") no-repeat 0% 7%,
-                        url("pictures/line.png") no-repeat 100% 7%;                                   
+            position: relative;
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 7%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 7%;
+            }                                   
         }
-        @media (min-width: 1280px) {          
-            background: url("pictures/line-desk.png") no-repeat 0% 7%;                                                         
+        @media (min-width: 1280px) { 
+            &:before {                
+                width: 29%;                
+            } 
+            &:after {                
+                width: 29%;              
+                left: 71%;
+            }                                                                     
         }  
     }     
     &__text {               
