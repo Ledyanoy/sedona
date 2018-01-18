@@ -51,16 +51,6 @@ table {
   .page__inner {
     min-width: 300px;
     max-width: 1279px; }
-    .page__inner--open .main-menu__list {
-      bottom: -220px; }
-    .page__inner--open .main-menu__btn--open {
-      display: none; }
-    .page__inner--open .main-menu__btn--close {
-      display: block; }
-    .page__inner--open .intro {
-      margin-top: 275px; }
-    .page__inner--open .page-header__logo {
-      margin-top: 220px; }
     @media (min-width: 1280px) {
       .page__inner {
         width: 1200px;
@@ -70,6 +60,24 @@ table {
   @media (min-width: 1280px) {
     .page {
       background-color: #eeeeee; } }
+  .page__mm-list {
+    bottom: 100%;
+    transition: bottom 0.4s; }
+  .page__intro {
+    margin-top: 55px;
+    transition: margin-top 0.4s; }
+  .page__logo {
+    transition: margin-top 0.4s; }
+  .page--open .page__mm-list {
+    bottom: -220px; }
+  .page--open .page__mm-btn--open {
+    display: none; }
+  .page--open .page__mm-btn--close {
+    display: block; }
+  .page--open .page__intro {
+    margin-top: 275px; }
+  .page--open .page__logo {
+    margin-top: 220px; }
 
 .page-header {
   position: relative;
@@ -79,8 +87,7 @@ table {
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
-    z-index: 1;
-    transition: 1s; }
+    z-index: 1; }
 
 @media (min-width: 768px) {
   .page-header__logo {
@@ -95,9 +102,7 @@ table {
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: absolute;
-    bottom: 100%;
-    transition: 1s; }
+    position: absolute; }
   .main-menu__item {
     display: flex; }
     .main-menu__item:not(:last-child) {
@@ -242,9 +247,7 @@ table {
   overflow: hidden; }
 
 .intro {
-  margin-top: 55px;
-  position: relative;
-  transition: 1s; }
+  position: relative; }
   .intro__image {
     position: relative;
     display: block;
