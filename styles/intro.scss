@@ -1,6 +1,7 @@
 .intro { 
     margin-top: 55px;      
-    position: relative;                
+    position: relative;
+    transition: 1s;                
     &__image {         
         position: relative;       
         display: block;       
@@ -51,7 +52,8 @@
 }
 @media (min-width: 768px) {
     .intro {
-        margin-top: 0px;
+        margin-top: 0px !important;
+        transition: none;
         &__image {                         
             background-image: url(pictures/back-tablet.jpg);  
             background-size: 101%; 
