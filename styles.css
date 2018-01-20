@@ -851,19 +851,19 @@ table {
       .form-input--story {
         margin-bottom: 38px; } }
 
-.form-radio + label {
+.form-radio.visually-hidden + label {
   display: block;
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
   cursor: pointer;
   border-radius: 50%; }
-  .form-radio + label:hover {
+  .form-radio.visually-hidden + label:hover {
     background-color: #e5e5e5; }
-  .form-radio + label:active {
+  .form-radio.visually-hidden + label:active {
     background-color: #d5d5d5; }
 
-.form-radio:checked + label {
+.form-radio.visually-hidden:checked + label {
   display: block;
   position: relative;
   width: 56px;
@@ -871,11 +871,11 @@ table {
   background-color: #f2f2f2;
   cursor: pointer;
   border-radius: 50%; }
-  .form-radio:checked + label:hover {
+  .form-radio.visually-hidden:checked + label:hover {
     background-color: #e5e5e5; }
-  .form-radio:checked + label:active {
+  .form-radio.visually-hidden:checked + label:active {
     background-color: #d5d5d5; }
-  .form-radio:checked + label:before {
+  .form-radio.visually-hidden:checked + label:before {
     content: "";
     position: absolute;
     width: 22px;
@@ -886,12 +886,15 @@ table {
     top: 17px;
     left: 17px; }
 
-.form-radio--check + label {
+.form-radio.visually-hidden:focus + label {
+  outline: 2px solid #a6c8ff; }
+
+.form-radio--check.visually-hidden + label {
   border-radius: 5px; }
 
-.form-radio--check:checked + label {
+.form-radio--check.visually-hidden:checked + label {
   border-radius: 5px; }
-  .form-radio--check:checked + label:before {
+  .form-radio--check.visually-hidden:checked + label:before {
     width: 10px;
     height: 17px;
     background-color: transparent;
@@ -975,6 +978,12 @@ table {
   width: 70%;
   margin-left: 22%;
   padding: 35px 0px; }
+
+.description__image {
+  width: 320px;
+  height: 260px;
+  display: block;
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .description {

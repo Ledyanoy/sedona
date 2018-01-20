@@ -1,5 +1,5 @@
-.form-radio {          
-    & + label {
+.form-radio {               
+    &.visually-hidden + label {
         display: block;
         width: 56px;
         height: 56px; 
@@ -13,7 +13,7 @@
             background-color: $form-input-space-act;                
         }                                
     }
-    &:checked + label {
+    &.visually-hidden:checked + label {
         display: block;
         position: relative;
         width: 56px;
@@ -38,19 +38,22 @@
             top: 17px;
             left: 17px;                
         }                                             
-    }     
+    }
+    &.visually-hidden:focus + label {        
+        outline: 2px solid $outline-color;                                                 
+    }      
     &--check {
-        & + label {                
+        &.visually-hidden + label {                
             border-radius: 5px;               
-        }
-        &:checked + label {                                   
+        }        
+        &.visually-hidden:checked + label {                                   
             border-radius: 5px;
             &:before {                    
                 width: 10px;
                 height: 17px;
-                background-color: transparent;                               
+                background-color: transparent;                                           
                 border-bottom: 4px solid $topic-color;
-                border-right: 4px solid $topic-color;
+                border-right: 4px solid $topic-color;                
                 top: 15px;
                 left: 20px; 
                 border-radius: 2px;
