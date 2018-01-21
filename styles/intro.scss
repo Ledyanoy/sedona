@@ -1,8 +1,8 @@
-.intro {    
-    &__image { 
+.intro { 
+    position: relative;
+    &__image {         
         position: relative;       
-        display: block;         
-        margin-top: 55px;
+        display: block;       
         padding-top: 90px;
         padding-bottom: 135px;
         margin-bottom: -40px;      
@@ -20,8 +20,8 @@
             bottom: 0;  
             transform-origin: left bottom;
             transform: skewY(9deg);                                  
-          } 
-          &:after {
+        } 
+        &:after {
             content: '';
             width: 55%;
             height: 4em;
@@ -32,7 +32,13 @@
             right: 0; 
             transform-origin: right bottom;
             transform: skewY(-9deg);                       
-          }                              
+        } 
+        &--form {
+            padding-top: 60px;
+            padding-bottom: 110px;
+            background-position: 0px -205px;
+            margin-bottom: -18px;                        
+        }                             
     }
     &__text {  
         display: block;       
@@ -40,17 +46,16 @@
         &--tablet  {
             margin-top: -10px;
         }            
-    }
-    
+    }   
 }
-
 @media (min-width: 768px) {
     .intro {
-        &__image {                  
-            margin-top: 0px;              
+        margin-top: 0px !important;
+        transition: none;
+        &__image {                         
             background-image: url(pictures/back-tablet.jpg);  
             background-size: 101%; 
-            padding-bottom: 140px;                       
+            padding-bottom: 140px;                                 
             &:before {                
                 height: 6.6em;
                 left: 4.4%; 
@@ -60,6 +65,12 @@
                 height: 6.6em;
                 right: 4.4%;
                 transform: skewY(-8deg);  
+            } 
+            &--form {
+                padding-top: 105px;
+                padding-bottom: 175px;
+                background-position: 0px -205px;
+                margin-bottom: -8px;                        
             }       
         }
     }
@@ -69,8 +80,7 @@
     .intro {
         &__image {             
             background-image: url(pictures/back-desktop.jpg); 
-            background-size: inherit;             
-            padding-bottom: 140px;            
+            background-size: inherit;                         
             &:before {                
                 height: 6.6em;
                 left: 250px;
@@ -80,7 +90,12 @@
                 height: 6.6em;
                 right: 250px;
                 width: 360px;                 
-            }              
+            } 
+            &--form {  
+                padding-top: 115px;              
+                padding-bottom: 175px;                
+                margin-bottom: 30px; 
+            }             
         }
     }
 }

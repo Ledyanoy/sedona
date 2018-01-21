@@ -1,0 +1,287 @@
+.form-card {    
+    padding-top: 15px;     
+    border-bottom: 1px solid $form-card-border;    
+    @media (min-width: 768px) {
+        border-bottom: none;                 
+    }
+    &:last-child {
+        border-bottom: none; 
+    }
+    &--name {
+        padding-top: 17px;
+        padding-bottom: 3px;
+        @media (min-width: 768px) {
+            width: 41%;
+            padding-bottom: 25px; /* опустил нижний блок*/                      
+        }
+        @media (min-width: 1280px) {
+            padding-top: 15px;                     
+        }             
+    }
+    &--contact {
+        padding-top: 17px;
+        padding-bottom: 6px;
+        @media (min-width: 768px) {                                     
+            width: 100%;
+            position: relative;
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 11%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 11%;
+            }                               
+        }
+        @media (min-width: 1280px) { 
+            &:before {                
+                width: 29%;                                
+                top: 15%;
+            } 
+            &:after {                
+                width: 29%;                
+                top: 15%;
+                left: 71%;
+            }                              
+        }
+    } 
+    &--impression {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        @media (min-width: 768px) {
+            order: -1; 
+            width: 59%;             
+            position: relative;
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 1px;
+                height: 290px;
+                background-color: $body-shadow;
+                left: 85%;
+                top: 7%;
+            }                    
+        } 
+        @media (min-width: 1280px) {
+            padding-top: 15px;                                
+        }              
+    } 
+    &--visited {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        @media (min-width: 768px) {             
+            width: 100%; 
+            padding-top: 25px;
+            position: relative; 
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 17%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 17%;
+            }                                            
+        } 
+        @media (min-width: 1280px) {
+            padding-bottom: 5px;
+            &:before {                
+                width: 29%;                                
+                top: 21%;
+            } 
+            &:after {                
+                width: 29%;                
+                top: 21%;
+                left: 71%;
+            }                                                       
+        }          
+    }   
+    &--feedback {
+        padding-top: 17px;
+        padding-bottom: 35px;
+        @media (min-width: 768px) {             
+            width: 100%;
+            position: relative;
+            &:before {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;                
+                top: 7%;
+            } 
+            &:after {
+                content: "";                
+                position: absolute;
+                width: 19%;
+                height: 1px;
+                background-color: $body-shadow;
+                left: 81%;
+                top: 7%;
+            }                                   
+        }
+        @media (min-width: 1280px) { 
+            &:before {                
+                width: 29%;                
+            } 
+            &:after {                
+                width: 29%;              
+                left: 71%;
+            }                                                                     
+        }  
+    }     
+    &__text {               
+        width: 95%;         
+        margin: 0 auto;        
+    } 
+    &__graphs {
+        width: 92%; 
+        margin: 0 auto;        
+        margin-top: -5px;        
+        @media (min-width: 768px) {
+            width: 100%;  
+        }        
+    }
+    &__graph {               
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px; 
+        width: 100%;
+        &--contact {
+            flex-wrap: wrap;
+            @media (min-width: 1280px) {
+                width: 50%;                
+            }                                           
+        } 
+        &--left {
+            @media (min-width: 1280px) {
+                width: 42%; 
+            } 
+        }
+        &--right {
+            @media (min-width: 1280px) {
+                margin-top: 20px; 
+            } 
+        }            
+    }
+    &__radiobtn { 
+        line-height: 57px; 
+        margin-bottom: 13px; 
+        @media (min-width: 768px) {
+            margin-bottom: 22px; 
+        }                           
+    }
+    &__check {
+        margin-top: -10px; /* поднял первую строу для pp */         
+        margin-bottom: 34px;         
+        &:last-child {
+            margin-bottom: 9px;  /* убрал лишний отступ */ 
+        }                               
+    }
+    &__name {        
+        color: $topic-color;
+        margin-right: 15px;
+        @media (min-width: 768px) {
+            font-size: 14px;
+        }                       
+    }        
+    &__item {         
+        margin-left: 20px;
+        width: 100%;
+        margin-top: 5px;
+        @media (min-width: 768px) {            
+            margin-top: 10px;
+            margin-left: 25px;            
+            width: 50%;
+        } 
+        @media (min-width: 1280px) {            
+            width: 30%;
+            margin-left: 0px;                       
+        }                            
+    } 
+    &__icons {        
+        display: block;
+        width: 58px;
+        height: 57px;            
+        margin-top: 10px; 
+        background-color: $form-icons;
+        background-image: url("pictures/phone.svg");  
+        background-repeat: no-repeat;
+        background-position: 50%; 
+        &--mail {
+            background-image: url("pictures/mail.svg");  
+        }           
+        &:hover {
+            filter: blur(1px);
+        }                                    
+    }    
+    &--angle {        
+        @media (min-width: 768px) {
+            width: 100%;
+            overflow: visible;
+            position: relative;                                                                                          
+            &:before { 
+                content: '';
+                position: absolute;
+                bottom: 64%;                            
+                transform-origin: left bottom;
+                transform: skewY(5deg);
+                width: 4.5%;
+                height: 100%; 
+                background: $menu-text-color;                                                                                 
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 64%;
+                right: 0;                            
+                transform-origin: right bottom;
+                transform: skewY(-5deg);
+                width: 4.5%;
+                height: 100%; 
+                background: $menu-text-color;                 
+            }                  
+        }
+        @media (min-width: 1280px) {
+            &:before {                
+                bottom: 105%;              
+                width: 25%;                                                                                                 
+            }
+            &:after {                
+                bottom: 105%;
+                right: 0;               
+                width: 25%; 
+            }               
+        }              
+    }
+    &__outer {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;        
+            width: 87%;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        @media (min-width: 1280px) {                    
+            width: 80%;            
+        }
+    }        
+} 

@@ -36,7 +36,7 @@
     &__topic {
         color: $topic-color;  
         font-size: 14px;        
-        line-height: 1.5em; 
+        line-height: 1.5em;         
     }
     &__part {
         margin-bottom: 30px;
@@ -91,11 +91,10 @@
             width: 70%; 
             margin: 0 auto;
             &--food {
-                width: 60%; 
+                width: 61%; 
             }
         }
     } 
-
 }
 @media (min-width: 1280px) {
     .cards {

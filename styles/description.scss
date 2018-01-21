@@ -2,20 +2,25 @@
     &__cards {
         width: 70%;
         margin-left: 22%;
-        padding: 35px 0px;
-    }
+        padding: 35px 0px;            
+    } 
+    &__image {                     
+        width: 320px;
+        height: 260px;
+        display: block;
+        margin: 0 auto;                       
+    }         
 }
-
 @media (min-width: 768px) {
     .description {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         &__image {                     
             width: 67%;
             height: 257px;
             overflow: hidden;
             &--bridge {                
-                order: -1;
+                order: -1;                
             }
         }  
         &__cards {

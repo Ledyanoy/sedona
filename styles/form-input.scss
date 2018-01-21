@@ -1,0 +1,38 @@
+.form-input {    
+    border: none;
+    color: $black-color;
+    background-color: $form-input-space; 
+    font-size:  18px;
+    font-weight: bold;
+    padding: 18px;
+    width: 100%;
+    &:hover {
+        background-color: $form-input-space-hvr;  
+    }  
+    &:active {
+        background-color: $menu-text-color;  
+    }     
+    &--contact {
+        margin-top: 10px;
+        width: 50%; 
+        flex-grow: 1;
+        @media (min-width: 1280px) {
+            width: 40%; 
+            flex-grow: 1;            
+        }
+    } 
+    &--story {                       
+        padding-top: 15px;
+        line-height: 1.4em;
+        word-spacing: -2px; /* сужаю расстояние между словами для pp*/
+        resize: none;            
+        margin-bottom: 27px;/*сдвигаю кнопку ниже*/
+        @media (min-width: 768px) {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        @media (min-width: 1280px) {                
+            margin-bottom: 38px;
+        }
+    }        
+}

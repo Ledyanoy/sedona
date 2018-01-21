@@ -1,0 +1,64 @@
+.form-radio {               
+    &.visually-hidden + label {
+        display: block;
+        width: 56px;
+        height: 56px; 
+        background-color: $form-input-space;
+        cursor: pointer;            
+        border-radius: 50%;         
+        &:hover {
+            background-color: $form-input-space-hvr;
+        }
+        &:active {
+            background-color: $form-input-space-act;                
+        }                                
+    }
+    &.visually-hidden:checked + label {
+        display: block;
+        position: relative;
+        width: 56px;
+        height: 56px; 
+        background-color: $form-input-space;
+        cursor: pointer;            
+        border-radius: 50%;
+        &:hover {
+            background-color: $form-input-space-hvr;
+        }
+        &:active {
+            background-color: $form-input-space-act;                
+        }
+        &:before {
+            content: "";                
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-color: $topic-color;
+            cursor: pointer;            
+            border-radius: 50%;
+            top: 17px;
+            left: 17px;                
+        }                                             
+    }
+    &.visually-hidden:focus + label {        
+        outline: 2px solid $outline-color;                                                 
+    }      
+    &--check {
+        &.visually-hidden + label {                
+            border-radius: 5px;               
+        }        
+        &.visually-hidden:checked + label {                                   
+            border-radius: 5px;
+            &:before {                    
+                width: 10px;
+                height: 17px;
+                background-color: transparent;                                           
+                border-bottom: 4px solid $topic-color;
+                border-right: 4px solid $topic-color;                
+                top: 15px;
+                left: 20px; 
+                border-radius: 2px;
+                transform: rotate(45deg);                   
+            }
+        }                
+    }   
+}

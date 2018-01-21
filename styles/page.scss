@@ -1,17 +1,53 @@
+@font-face {
+	font-family: "PT Sans"; 
+	src: url(font/PTSans-Regular.woff2); 
+} 
 .page {  
     font-family: $font-primary; 
-    text-transform: uppercase; 
-    @media (min-width: 1280px) { 
-        background-color: $sight-back-color;
-    }             
+    text-transform: uppercase;
     &__inner {
-        min-width: 290px;
-        max-width: 1279px;
+        min-width: 300px;
+        max-width: 1279px;           
         @media (min-width: 1280px) { 
             width: 1200px; 
             margin: 0 auto;
             background-color: $menu-text-color;
             box-shadow: 0 0 8px 4px $body-shadow;
         }            
-    }  
+    } 
+    @media (min-width: 1280px) { 
+        background-color: $sight-back-color;
+    }
+    &__mm-list{
+        bottom: 100%;
+        transition: bottom 0.4s;
+    }
+    &__intro {
+        margin-top: 55px;
+        transition: margin-top 0.4s;
+    }
+    &__logo {
+        transition: margin-top 0.4s;
+    }
+    &--open {
+        .page {
+            &__mm-list {
+                bottom: -220px;
+            }
+            &__mm-btn {                
+                &--open {
+                    display: none;                                   
+                }
+                &--close {
+                    display: block;                    
+                }
+            }
+            &__intro {
+                margin-top: 275px;
+            }
+            &__logo {
+                margin-top: 220px;
+            }
+        }                  
+    }           
 }
